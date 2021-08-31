@@ -47,6 +47,6 @@ class FeedItemsController < ApplicationController
   end
 
   def feed_items_params
-    params.require(:feed_item).permit(:description, :url)
+    params.require(:feed_item).permit(:description, :url, :photo)
   end
 end
