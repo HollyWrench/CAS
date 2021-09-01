@@ -1,3 +1,29 @@
+.main-container {
+  padding: 60px;
+  .avatar {
+    height: 60px;
+    width: 60px;
+    margin-top: 2px;
+    margin-right: -2px;
+  }
+}
+
+.header-and-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  h4 {
+    font-size: 34px;
+    color: white;
+    padding-top: 12px;
+  }
+}
+
 .events-card {
   position: relative;
   height: 600px;
@@ -60,7 +86,8 @@ h1, h2, h3 {
 
 h2 {
   font-size: 50px;
-  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0px;
 }
 // h1, p {
 //   color: white;
@@ -85,8 +112,8 @@ h2 {
 // }
 
 
+
 .other-container {
-  padding: 60px;
   // justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
