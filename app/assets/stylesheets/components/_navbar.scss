@@ -1,15 +1,16 @@
-.navbar-lewagon {
+.nav-container {
   justify-content: space-between;
   background: black;
   max-height: 150px;
   -webkit-text-stroke: 1px red;
+  padding: 60px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.nav-container .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.nav-container .navbar-brand img {
   max-width: 100px;
   max-height: 100px;
 }
@@ -32,6 +33,8 @@ color: white
 
 .navbar-link{
   color: white;
+}
+
 }
 
 .nav-button {
