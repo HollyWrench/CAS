@@ -9,26 +9,27 @@ $headings-font-family:    $headers-font;
 $body-bg:                 $light-gray;
 $font-size-base: 1rem;
 
+// Override other variables below!
+$cas-lime-green: #33FF00;
+$cas-red: #F4225E;
+$cas-pink: #FF00B8;
+$cas-turquoise: #00FFD1;
+$cas-purple: #816CFF;
+$cas-black: black;
+$cas-white: white;
+
 // Colors
 $body-color: $gray;
-$primary:    $blue;
-$success:    $green;
-$info:       $yellow;
-$danger:     $red;
-$warning:    $orange;
+$primary:    $cas-turquoise;
+$success:    $cas-pink;
+$info:       $cas-red;
+$danger:     $cas-lime-green;
+$warning:    $cas-purple;
 
 // Buttons & inputs' radius
 $border-radius:    2px;
 $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
-// Override other variables below!
-$cas-lime-green: 33FF00;
-$cas-red: F4225E;
-$cas-pink: FF00B8;
-$cas-turquoise: 00FFD1;
-$cas-purple: 816CFF;
-$cas-black: black;
-$cas-white: white;
 
 $body-color: $cas-black;
