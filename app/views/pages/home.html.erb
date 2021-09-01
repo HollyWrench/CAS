@@ -4,7 +4,27 @@
       <h1 style ="font-size: 250px;">CAS</h1>
     </div>
     <div class="center foot">
-    <%= link_to "Explore", events_path, class: "white-button" %>
+    <%#  %>
+
+    <%#  %>
+    <%= link_to events_path, class:"loader" do %>
+          <span class="move-up">Explore</span>
+        <div class="loader-bg">
+        </div>
+        <div class="drops">
+          <div class="drop1"></div>
+          <div class="drop2"></div>
+        </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="center">
+        <defs>
+          <filter id="liquid">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="liquid" />
+          </filter>
+        </defs>
+      </svg>
+    <% end %>
     </div>
   </div>
 </div>
