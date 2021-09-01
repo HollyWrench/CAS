@@ -1,4 +1,15 @@
-<h1>hello</h1>
+<div class="title-and-filter">
+  <h1>hello</h1>
+  <li class="nav-item dropdown">
+    <%= image_tag "https://icon-library.com/images/three-bars-icon/three-bars-icon-6.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+      <p>ALL</p>
+      <p>SEMINARS</p>
+      <p>SOCIALS</p>
+    </div>
+  </li>
+</div>
+
 
 <div class="other-container">
   <% @events.each do |event| %>
