@@ -7,4 +7,8 @@ class PagesController < ApplicationController
   def profile
     # Bookings.where(user_id: current_user.id)
   end
+
+  def about
+
+  end
 end
