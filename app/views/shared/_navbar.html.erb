@@ -1,10 +1,12 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+    <%= image_tag("CASLOGO.png") %>
     <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="nav-bar-container">
+    <h1 class="header">CONTEMPORARY ARTS SOCIETY</h1>
+  <%# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
+<<<<<<< HEAD
   </button>
 
 <%= link_to "About Us", events_path, class: "navbar-link" %>
@@ -35,5 +37,14 @@
         </li>
       <% end %>
     </ul>
+=======
+  </button> %>
+    <div class="button-wrapper d-flex">
+      <%= link_to "ABOUT US", about_path, class: "navbar-link" %>
+      <%= link_to "EVENTS", events_path, class: "navbar-link" %>
+      <%= link_to "FEED", feed_items_path, class: "navbar-link" %>
+      <%= link_to "PROFILE", profile_path, class: "navbar-link" %>
+    </div>
+>>>>>>> f087fe2dda09e1fd2424271bb43c1c65830630e2
   </div>
 </div>
