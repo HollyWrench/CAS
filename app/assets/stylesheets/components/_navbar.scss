@@ -2,8 +2,9 @@
   justify-content: space-between;
   background: black;
   max-height: 150px;
-  -webkit-text-stroke: 1px red;
+  -webkit-text-stroke: 1px #F4225E;
   padding: 60px;
+  border-bottom: 1px solid #33FF00;
 }
 
 .nav-container .navbar-collapse {
@@ -18,17 +19,20 @@
 .nav-bar-container {
 width: 76%;
 font-size: 70;
+margin-top: 20px;
 }
 
 .button-wrapper{
-justify-content: flex-start;
+// justify-content: flex-start;
 justify-content: space-around;
 max-width: 80%;
+padding-left: 100px;
 }
 
 .header{
 font-size: 50px;
-color: white
+color: white;
+margin-bottom: 0px;
 }
 
 .navbar-link{
