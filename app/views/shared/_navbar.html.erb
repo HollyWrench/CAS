@@ -4,6 +4,7 @@
     <% end %>
   <div class="nav-bar-container">
     <h1 class="header">CONTEMPORARY ARTS SOCIETY</h1>
+
       <%# <% <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> %>
@@ -21,6 +22,7 @@
         <li class="nav-item dropdown">
           <%= image_tag "https://icon-library.com/images/three-bars-icon/three-bars-icon-6.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
         </li>
