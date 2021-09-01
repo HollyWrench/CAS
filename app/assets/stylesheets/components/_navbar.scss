@@ -1,7 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: black;
-
+  max-height: 150px;
+  -webkit-text-stroke: 1px red;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,12 +10,13 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .nav-bar-container {
-width: 70%;
+width: 76%;
+font-size: 70;
 }
 
 .button-wrapper{
@@ -24,9 +26,10 @@ max-width: 80%;
 }
 
 .header{
-font-size: 60px;
+font-size: 50px;
 color: white
 }
+
 
 .nav-button {
     border: none;
@@ -51,4 +54,7 @@ color: white
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 	transition: all 0.3s ease 0s;
   text-decoration: none;
+  
+.navbar-link{
+  color: white;
 }
