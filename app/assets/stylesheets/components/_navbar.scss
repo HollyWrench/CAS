@@ -1,6 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: black;
+  max-height: 150px;
+  -webkit-text-stroke: 1px red;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +10,51 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.nav-bar-container {
+width: 76%;
+font-size: 70;
+}
+
+.button-wrapper{
+justify-content: flex-start;
+justify-content: space-around;
+max-width: 80%;
+}
+
+.header{
+font-size: 50px;
+color: white
+}
+
+.nav-button {
+    border: none;
+	background: none;
+	color: #ffffff !important;
+	font-weight: 100;
+	padding: 20px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+
+.nav-button:hover {
+  	text-shadow: 0px 0px 6px #FF3D38;
+	// background: #434343;
+	color: #ffffff !important;
+	font-weight: 900 !important; //700
+	letter-spacing: 3px;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.navbar-link{
+  color: white;
 }

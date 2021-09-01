@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1;
+  height: 100px;
+  border-style: solid;
+  color: white;
+  border-color: #2AFF19;
+  border-width: thin;
+  background-color: black;
+  text-align: center;
+}
+
+.item + .item {
+  margin-left: 2%;
+}
