@@ -1,12 +1,14 @@
 
 .footer{
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .footer li{
   display: inline;
 }
 
-.footer{
-  position: absolute;
-}
+.fab, .fas {
+    font-size: 100px;
+  }
