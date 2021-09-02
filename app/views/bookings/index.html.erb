@@ -1,4 +1,4 @@
-<% @bookings.each do |booking| %>
+<%= @bookings.each do |booking| %>
   <div class = "bookings-card">
     <%= cl_image_tag booking.event.photo.key, height: 150, width: 200, crop: :fill %>
     <li class="name">

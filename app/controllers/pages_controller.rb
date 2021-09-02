@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def profile
-    # Bookings.where(user_id: current_user.id)
+    @bookings = Booking.all
   end
 
   def about
