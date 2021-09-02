@@ -6,10 +6,16 @@
       <% end %>
 
       <% if feed_item.description %>
-        <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo"%>
-        <li class="feed-item-info">
-          <p><%=feed_item.description%></p>
-        </li>
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo flip-card-front"%>
+          </div>
+          <div class="flip-card-back">
+            <li class="feed-item-info">
+              <p><%=feed_item.description%></p>
+            </li>
+          </div>
+        </div>
       <% end %>
     </div>
   <% end %>
