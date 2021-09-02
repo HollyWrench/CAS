@@ -8,6 +8,8 @@ puts "creating seeds"
 
 user = User.create!(email: "hubabuba.pop@gmail.com", password: "Helloooooo!", first_name: "Holly", last_name: "Wrench", committee_position: "President")
 puts user
+booking = Booking.create!(user_id: User.first, event_id: Event.first, capacity: 3)
+puts booking
 
 # EVENT: name location price description date
 # 1. cloudinary ---------------------------------- DONE
