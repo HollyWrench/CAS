@@ -19,7 +19,7 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
     # @event.user = current_user
     if @event.save
-      # redirect_to events_path, notice: "Thanks for your suggestion (:"
+      redirect_to events_path, notice: "Thanks for your suggestion (:"
     else
       render :new
     end
@@ -40,6 +40,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:location, :name, :price, :description, :photo, :category, :price)
+    params.require(:event).permit(:location, :name, :price, :description, :photo, :category, :date)
   end
 end
