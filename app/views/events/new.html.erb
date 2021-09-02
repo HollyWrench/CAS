@@ -4,13 +4,13 @@
     <%= f.input :name, placeholder: "Name", label: false %>
     <%= f.input :location, placeholder: "Location", label: false %>
     <%= f.input :description, placeholder: "Description", label: false %>
-    <%= f.input :category, collection: Event::CATEGORIES, :label => 'Send To' %>
+    <%= f.input :category, collection: Event::CATEGORIES, placeholder: "Select category", label: false %>
     <%= f.input :price, placeholder: "Price", label: false %>
     <%= f.input :date, placeholder: "Date", label: false %>
 
-    <input type="date" id="date"
-       value="2021-09-28"
-       min="2021-01-01" max="2022-01-01">
+    <%# <input type="date" id="date" %>
+      <%# value="2021-09-28" %>
+       <%# min="2021-01-01" max="2022-01-01"> %>
 
     <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %>
     <%= f.button :submit, id: "sweet-alert-button", class: 'btn btn-primary', value: "Suggest event" %>
