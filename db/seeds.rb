@@ -1,7 +1,7 @@
 require "open-uri"
+Booking.destroy_all
 Event.destroy_all
 User.destroy_all
-Booking.destroy_all
 FeedItem.destroy_all
 
 puts "creating seeds"

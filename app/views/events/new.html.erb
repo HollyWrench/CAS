@@ -1,4 +1,4 @@
-<div class = "new-event">
+<div class = "new-event main-container">
   <%# <h3>Create a new event below:</h3> %>
   <%= simple_form_for(@event) do |f| %>
     <%= f.input :name, placeholder: "Name", label: false %>
@@ -8,6 +8,6 @@
     <%= f.input :price, placeholder: "Price", label: false %>
     <%= f.input :date, placeholder: "Date", label: false %>
     <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %>
-    <%= f.button :submit, id: "sweet-alert-button", class: 'btn btn-primary', value: "Suggest event" %>
+    <%= f.button :submit, id: "new-event-sweet-alert-button", class: 'btn btn-primary', value: "Suggest event", style: "width: 100%" %>
   <% end %></p>
 </div>
