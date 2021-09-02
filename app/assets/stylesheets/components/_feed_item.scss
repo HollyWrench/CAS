@@ -1,0 +1,9 @@
+.other-container {
+  // justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  .feed-item-photo {
+    border: 1px solid $cas-pink;
+  }
+}
