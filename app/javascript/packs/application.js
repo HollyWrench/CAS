@@ -27,10 +27,10 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-import { initButton } from '../components/button';
+import { priceCalc } from '../components/price';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  initButton();
+  priceCalc();
 });

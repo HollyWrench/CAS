@@ -122,3 +122,57 @@ h2 {
     border: 1px solid $cas-pink;
   }
 }
+
+.bookings-card {
+  position: relative;
+  border: solid 1px $cas-turquoise;
+  border-radius: 8px;
+  list-style: none;
+  margin-bottom: 16px;
+  color: black;
+  background-color: white;
+  padding: 30px;
+  .name {
+    color: black;
+    font-size: 25px;
+    font-family: $headers-font;
+    font-weight: bold;
+    padding: 5px 0px;
+  }
+  .info {
+    font-family: $headers-font;
+    font-weight: lighter;
+    padding: 0px 0px;
+  }
+
+    li {
+    display: block;
+  }
+
+  a {
+    position: absolute;
+    bottom: 20px;
+    padding: 4px;
+    left: 30%;
+    margin-left: 10px;
+    border: solid 1px white;
+    border-radius: 16px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  // a:hover {
+  //   color: black;
+  //   background-color: white;
+  // }
+
+  img {
+    width: 50%;
+    height: 260px;
+    border-radius: 8px;
+    // margin: 30px;
+    // these are specified in the HTML no? which are they listening to?
+  }
+
+}
