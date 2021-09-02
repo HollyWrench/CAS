@@ -1,12 +1,12 @@
 <div class="other-container">
   <% @feed_items.each do |feed_item| %>
-    <div class="events-card" data-aos="flip-down" data-aos-duration=90>
+    <div class="feed-items-card" data-aos="flip-down" data-aos-duration=90>
       <% if feed_item.url %>
-        <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed_item-photo", href: feed_item.url %>
+        <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo", href: feed_item.url %>
       <% end %>
 
       <% if feed_item.description %>
-        <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed_item-photo"%>
+        <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo"%>
         <li class="info">
           <p><%=feed_item.description%></p>
         </li>

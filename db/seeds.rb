@@ -137,7 +137,7 @@ feed_item6 = FeedItem.new(description: "'Seeing Through Time', Titus Kaphar, 201
 feed_item6.photo.attach(io: file17, filename: 'MoMA.png', content_type: 'image/png')
 feed_item6.save!
 
-booking = Booking.create!(user_id: User.first, event_id: Event.first, tickets_count: 3)
+booking = Booking.create!(user: User.first, event: Event.first, tickets_count: 3)
 puts booking
 
 puts "data loaded successfully"
