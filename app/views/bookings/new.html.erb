@@ -1,8 +1,8 @@
 <div class="d-flex justify-content-center">
   <div class= "center">
-    <div class="events-card">
+    <div class="bookings-card">
       <div class="center">
-        <h3>Book your tickets here!:</h3>
+        <h3 style="color:black;">Book your tickets here!:</h3>
         <%= cl_image_tag @event.photo.key, height: 150, width: 200, crop: :fill %>
         <li class="name">
           <p><%=@event.name%></p>
@@ -19,10 +19,12 @@
           <%# <%= f.input :description %>
           <%# <%= f.input :location %>
           <%# <%= f.input :start_date, as: :date %>
-          <%# <%= f.input :quantity %>
+           <%= f.input :tickets_count %>
           <%= f.button :submit, class: 'btn btn-primary' %>
         <% end %></p>
-          £<%= @event.price %>0
+          <div id="price-div" data-price="<%=@event.price%>">
+            £<%= @event.price %>0
+          </div>
       </div>
     </div>
   </div>
