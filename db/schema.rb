@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2021_09_02_101843) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "date"
-    t.string "type"
+    t.string "category"
   end
 
   create_table "feed_items", force: :cascade do |t|

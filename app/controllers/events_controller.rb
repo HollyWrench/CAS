@@ -1,6 +1,10 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    if params[:filter].present?
+      @events = Event.where(category: params[:filter])
+    else
+      @events = Event.all
+    end
   end
 
   def show
@@ -40,6 +44,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:location, :name, :price, :description, :photo)
+    params.require(:event).permit(:location, :name, :price, :description, :photo, :category)
   end
 end
