@@ -7,6 +7,7 @@
 .vertical_image{
   font-size: 30px;
   padding: 1em;
+  margin: 3rem;
   color: white;
   border-style: solid;
   border-color: yellowgreen;
@@ -15,10 +16,15 @@
 .help{
   border-style: solid;
   border-color: red;
+  margin-bottom: 2rem;
 }
 
 .help2{
   border-style: solid;
   border-color: orange;
   height: auto;
+}
+
+.holder{
+  margin: 2rem;
 }
