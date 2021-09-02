@@ -11,15 +11,8 @@
         <%= image_tag "https://icon-library.com/images/three-bars-icon/three-bars-icon-6.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': true %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
         <%= form_tag events_path, method: :get do %>
-          <%= form.select :filter, ["social", "seminar", "other"]
-            # params[:filter],
-            # class: "form-control"
-          %>
-          <select>
-            <option value="social">Socials</option>
-            <option value="social">Seminars</option>
-          </select>
-        <%# <%= submit_tag "filter", class: "btn btn-primary" %> %>
+          <%= select_tag "filter", options_for_select(["social", "seminar", "other"], "social")%>
+        <%= submit_tag "filter", class: "btn btn-primary" %>
         <% end %>
         <%# <p>ALL</p>
         <p>SEMINARS</p>
