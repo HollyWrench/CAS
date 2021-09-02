@@ -7,7 +7,7 @@
 
       <% if feed_item.description %>
         <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo"%>
-        <li class="info">
+        <li class="feed-item-info">
           <p><%=feed_item.description%></p>
         </li>
       <% end %>
