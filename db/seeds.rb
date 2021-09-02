@@ -1,7 +1,7 @@
 require "open-uri"
+Booking.destroy_all
 Event.destroy_all
 User.destroy_all
-Booking.destroy_all
 FeedItem.destroy_all
 
 puts "creating seeds"
@@ -136,5 +136,8 @@ file17 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491532
 feed_item6 = FeedItem.new(description: "'Seeing Through Time', Titus Kaphar, 2018")
 feed_item6.photo.attach(io: file17, filename: 'MoMA.png', content_type: 'image/png')
 feed_item6.save!
+
+booking = Booking.create!(user: User.first, event: Event.first, tickets_count: 3)
+puts booking
 
 puts "data loaded successfully"

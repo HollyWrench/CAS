@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center">
+  <div class= "center">
+    <div class="bookings-card">
+      <div class="center">
+        <h3 style="color:black;">Book your tickets here!:</h3>
+        <%= cl_image_tag @event.photo.key, height: 150, width: 200, crop: :fill %>
+        <li class="name">
+          <p><%=@event.name%></p>
+        </li>
+        <li class="info">
+          <p><%=@event.description%></p>
+        </li>
+        <li class="info">
+          <p><strong>LOCATION: </strong><%=@event.location%></p>
+        </li>
+        <br>
+        <%= simple_form_for([@event, @booking]) do |f| %>
+          <%# <%= f.input :name %>
+          <%# <%= f.input :description %>
+          <%# <%= f.input :location %>
+          <%# <%= f.input :start_date, as: :date %>
+           <%= f.input :tickets_count %>
+          <%= f.button :submit, class: 'btn btn-primary' %>
+        <% end %></p>
+          <div id="price-div" data-price="<%=@event.price%>">
+            £<%= @event.price %>0
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

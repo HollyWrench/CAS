@@ -28,6 +28,7 @@
     <% @events.each do |event| %>
       <div class="events-card" data-aos="flip-down" data-aos-duration=90>
         <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
+
         <li class="name">
           <p><%=event.name%></p>
         </li>
@@ -37,6 +38,7 @@
         <li class="info">
           <p><strong>LOCATION: </strong><%=event.location%></p>
         </li>
+        <%=link_to "BOOK", new_event_booking_path(event)%>
       </div>
     <% end %>
   </div>

@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_02_101843) do
+
+ActiveRecord::Schema.define(version: 2021_09_02_145937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +42,7 @@ ActiveRecord::Schema.define(version: 2021_09_02_101843) do
     t.bigint "event_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "tickets_count", default: 1
     t.index ["event_id"], name: "index_bookings_on_event_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
@@ -52,8 +54,8 @@ ActiveRecord::Schema.define(version: 2021_09_02_101843) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.datetime "date"
     t.string "category"
+    t.date "date"
   end
 
   create_table "feed_items", force: :cascade do |t|

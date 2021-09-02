@@ -19,4 +19,12 @@
 body {
   background-color: black;
   border: solid thin #33ff00;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+footer{
+    margin-top: auto;
 }

@@ -1,18 +1,35 @@
 <h1>This is my profile</h1>
-<div class="container">
-  <div class="item">
-  <h2 class="home-column-title">EVENT BOOKINGS:</h2>
+
+  <div class="profile-wrapper">
+    <div class="item">
+      <h2 class="home-column-title">EVENT BOOKINGS:</h2>
+      <div style="width:500px">
+          <div class="cards">
+      <% @bookings.each do |booking| %>
+        <% if booking.user_id == current_user.id %>
+              <%= cl_image_tag booking.event.photo.key, height: 150, width: 200, crop: :fill %>
+                <p><%=booking.event.name%></p>
+                <p><%=booking.event.description%></p>
+                <p><strong>LOCATION: </strong><%=booking.event.location%></p>
+                <p>Tickets: <%= booking.tickets_count %></p>
+              <%# <%= link_to 'Edit', edit_booking_path(booking)  %>
+              <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
+          <% end %>
+      <% end %>
+          </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <h2 class="home-column-title">SAVED CONTENT:</h2>
+    </div>
+    <div class="item">
+      <h2 class="home-column-title">MY INFO:</h2>
+      <ul>
+        <li>
+        <%= current_user.first_name %>
+        <%= current_user.last_name %>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="item">
-    <h2 class="home-column-title">SAVED CONTENT:</h2>
-  </div>
-  <div class="item">
-    <h2 class="home-column-title">MY INFO:</h2>
-    <ul>
-      <li>
-      <%= current_user.first_name %>
-      <%= current_user.last_name %>
-      </li>
-    </ul>
-  </div>
-</div>
