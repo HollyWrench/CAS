@@ -5,7 +5,7 @@
 }
 
 .vertical_image{
-  font-size: 30px;
+  font-size: 25px;
   padding: 1em;
   margin: 3rem;
   color: white;
@@ -16,7 +16,7 @@
 .help{
   border-style: solid;
   border-color: red;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .help2{
@@ -26,5 +26,22 @@
 }
 
 .holder{
-  margin: 2rem;
+  margin: 4rem;
+}
+
+.application{
+  border: 3px solid yellowgreen;
+  padding: 3px;
+}
+
+.home-app-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-button {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
