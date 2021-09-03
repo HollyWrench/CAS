@@ -1,6 +1,6 @@
 <div class="other-container">
   <% @feed_items.each do |feed_item| %>
-    <div class="feed-items-card" data-aos="flip-down" data-aos-duration=90>
+    <div class="feed-items-card" data-aos="zoom-out-up" data-aos-duration=90>
       <% if feed_item.url %>
         <%# <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
         <%= link_to cl_image_tag(feed_item.photo.key), feed_item.url, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
