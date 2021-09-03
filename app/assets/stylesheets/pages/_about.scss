@@ -2,26 +2,26 @@
 .homepage_image{
   max-width: 100%;
   height: auto;
+  border-bottom: 2px solid #33FF00;
 }
 
 .vertical_image{
   font-size: 25px;
   padding: 1em;
-  margin: 3rem;
+  margin: 60px;
   color: white;
-  border-style: solid;
-  border-color: yellowgreen;
+  border: 1px solid #33FF00;
 }
 
 .help{
   border-style: solid;
-  border-color: red;
+  border: 1px solid #F4225E;
   margin-bottom: 4rem;
 }
 
 .help2{
   border-style: solid;
-  border-color: orange;
+  border: 1px solid #816CFF;
   height: auto;
 }
 
@@ -30,8 +30,13 @@
 }
 
 .application{
-  border: 3px solid yellowgreen;
-  padding: 3px;
+  margin: 60px;
+  margin-top: 0px;
+  margin-bottom: 6rem;
+  font-size: 20px;
+  border: 1px solid #33FF00;
+  padding: 30px;
+  color: white
 }
 
 .home-app-info {

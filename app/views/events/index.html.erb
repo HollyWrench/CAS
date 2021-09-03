@@ -6,20 +6,25 @@
       <li class="nav-item dropdown">
         <%= image_tag "https://icon-library.com/images/three-bars-icon/three-bars-icon-6.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': true %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-        <p>ALL</p>
+        <%= form_tag events_path, method: :get do %>
+          <%= select_tag "filter", options_for_select(["social", "seminar", "other"], "social")%>
+        <%= submit_tag "filter", class: "btn btn-primary" %>
+        <% end %>
+        <%# <p>ALL</p>
         <p>SEMINARS</p>
-        <p>SOCIALS</p>
+        <p>SOCIALS</p> %>
+        <%# SHOULD ^^^ ALL BE INSIDE THIS DIV? THAT IS CURRENTLY DOING NOTHING? %>
         </div>
       </li>
     </div>
   </div>
 
   <div class="other-container">
+
     <% @events.each do |event| %>
       <div class="events-card" data-aos="flip-down" data-aos-duration=90>
-        <% if event.photo.attached? %>
-          <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill, class: "event-photo" %>
-        <% end %>
+        <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill, class: "event-photo" %>
+
         <li class="name">
           <p><%=event.name%></p>
         </li>

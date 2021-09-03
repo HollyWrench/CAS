@@ -1,11 +1,12 @@
 .main-container {
   padding: 60px;
-  .avatar {
-    height: 60px;
-    width: 60px;
-    margin-top: 2px;
-    margin-right: -2px;
-  }
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  margin-top: 2px;
+  margin-right: -2px;
 }
 
 .header-and-filter {
@@ -120,6 +121,7 @@ h2 {
   grid-gap: 16px;
   .event-photo {
     border: 1px solid $cas-pink;
+    // this is what is putting pink around the photo on each card!
   }
 }
 
@@ -175,4 +177,14 @@ h2 {
     // these are specified in the HTML no? which are they listening to?
   }
 
+}
+
+.new-event {
+  // text-align: center;
+  // #new-event-sweet-alert-button {
+  //   display:inline-block;
+  // }
+  input {
+    border: 1px solid $cas-red;
+  }
 }
