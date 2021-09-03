@@ -25,7 +25,7 @@
   }
 }
 
-.events-card {
+.events-card, .new-event-card {
   position: relative;
   height: 600px;
   border: solid 1px $cas-turquoise;
@@ -64,6 +64,7 @@
     background-color: black;
     font-size: 25px;
     text-decoration: none;
+    // button to book event
   }
   // a:hover {
   //   color: black;
@@ -186,5 +187,27 @@ h2 {
   // }
   input {
     border: 1px solid $cas-red;
+  }
+}
+
+.new-event-card {
+  background-color: transparent;
+  a {
+    // position: absolute;
+    left: 2%;
+    top: 4%;
+    margin: auto;
+    // bottom: 20px;
+    padding: 4px;
+    // left: 30%;
+    margin-left: 10px;
+    border: solid 1px $cas-red;
+    border-radius: 16px;
+    color: $cas-turquoise;
+    background-color: transparent;
+    font-size: 35px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
   }
 }
