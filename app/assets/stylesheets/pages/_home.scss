@@ -7,6 +7,7 @@ h1 {
 
 .adjust-cas-logo {
   padding-right: 90px;
+
 }
 
 h3 {
@@ -238,4 +239,34 @@ svg {
 
 .drop2 {
   animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .5s infinite;
+}
+
+.home-carousel {
+  position: relative;
+}
+
+.home-title {
+  position: absolute;
+  z-index: 3;
+  left: 363px;
+  top: 120px;
+}
+
+.home-carousel:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+     rgba(0, 0, 0, 0.45),
+     rgba(0, 0, 0, 0.45)
+  );
+}
+
+.shadow {
+  background-color:rgba(0, 0, 0, 0.5);
+
 }
