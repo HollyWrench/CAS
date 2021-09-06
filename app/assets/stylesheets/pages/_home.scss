@@ -264,7 +264,7 @@ svg {
 		0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
 }
 
-.home-carousel:before {
+.home-carousel::before {
   content: "";
   display: block;
   position: absolute;
@@ -272,13 +272,29 @@ svg {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-     rgba(0, 0, 0, 0.45),
-     rgba(0, 0, 0, 0.45)
-  );
+  // background: linear-gradient(
+  //    rgba(0, 0, 0, 0.45),
+  //    rgba(0, 0, 0, 0.45)
+  // );
+  background: linear-gradient(#9d9d9d 40%, #717171 80%);
+}
+
+.home-carousel::after {
+  background: linear-gradient(#9d9d9d 40%, #717171 80%);
 }
 
 .shadow {
   background-color:rgba(0, 0, 0, 0.5);
 
+}
+
+.carousel-image {
+  background: linear-gradient(#9d9d9d 40%, #717171 80%);
+}
+
+.gradient-overlay {
+  width: 100%;
+  height: 100%;
+  color: black;
+  opacity: 0.5;
 }
