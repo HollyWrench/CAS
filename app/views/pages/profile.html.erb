@@ -7,14 +7,22 @@
       <div class="cards">
         <% @bookings.reverse[0..4].each do |booking| %>
           <% if booking.user_id == current_user.id %>
-                <%= cl_image_tag booking.event.photo.key, height: 150, width: 200, crop: :fill %>
-                  <p><%=booking.event.name%></p>
-                  <p><%=booking.event.description%></p>
-                  <p><strong>LOCATION: </strong><%=booking.event.location%></p>
-                  <p>Tickets: <%= booking.tickets_count %></p>
-                <%# <%= link_to 'Edit', edit_booking_path(booking)  %>
-                <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
-            <% end %>
+            <%= cl_image_tag booking.event.photo.key, height: 150, width: 200, crop: :fill %>
+            <li class="name">
+              <p><%=booking.event.name%></p>
+            </li>
+            <li class="info">
+              <p><%=booking.event.description%></p>
+            </li>
+            <li class="info">
+              <p><strong>LOCATION: </strong><%=booking.event.location%></p>
+            </li>
+            <li class="tickets">
+              <p>Tickets: <%= booking.tickets_count %></p>
+            </li>
+            <%# <%= link_to 'Edit', edit_booking_path(booking)  %>
+            <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
+          <% end %>
         <% end %>
       </div>
     </div>
