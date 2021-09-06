@@ -1,5 +1,6 @@
 .other-container {
   // justify-items: center;
+  padding: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -22,6 +23,10 @@
 // img :hover {
 //   transform: rotateY(180deg);
 // }
+.feed-header {
+  padding: 60px;
+  padding-bottom: 0px;
+}
 
 .events-card {
   position: relative;
