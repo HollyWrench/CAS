@@ -1,4 +1,14 @@
 class EventsController < ApplicationController
+  before_action :authenticate_user!, only: :toggle_favorite
+
+  def toggle_favorite
+    @event = Event.find_by(id: params[:id])
+    current_user.favorited?(@event) ?
+    current_user.unfavorite(@event) :
+    current_user.favorite(@event)
+    # redirect_to events_path, notice: current_user.favorited?(@event) ? "liked" : "unliked"
+  end
+
   def index
     if params[:filter].present?
       @events = Event.where(category: params[:filter])
