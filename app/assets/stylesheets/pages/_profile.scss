@@ -1,5 +1,6 @@
-.item {
+.item1, .item2 {
   // flex-grow: 1;
+  padding: 30px;
   height: 100%;
   border-style: solid;
   color: white;
@@ -7,6 +8,14 @@
   border-width: thin;
   background-color: black;
   text-align: center;
+}
+
+.item1 {
+  width: 580px;
+}
+
+.item2 {
+  width: 340px;
 }
 
 .item + .item {
@@ -26,4 +35,18 @@
 
 ul {
   list-style: none;
+}
+
+.cards {
+  margin: auto;
+  border: solid 1px $cas-red;
+  border-radius: 8px;
+  // list-style: none;
+  // margin-top: 16px;
+  // margin-bottom: 16px;
+  color: black;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  width: 80%;
 }

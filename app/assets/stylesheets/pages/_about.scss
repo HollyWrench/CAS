@@ -88,11 +88,6 @@
 }
 
 
-h2 {
-  padding: 60px;
-  padding-bottom: 0px;
-}
-
 
 .about-info {
   padding: 60px;
@@ -131,5 +126,13 @@ li {
   }
   h2, h3 {
     color: black;
+    padding-left: 60px;
+  }
+}
+
+.about-header {
+  h2 {
+    padding: 60px;
+    padding-bottom: 0px;
   }
 }
