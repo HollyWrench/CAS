@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_02_145937) do
+ActiveRecord::Schema.define(version: 2021_09_06_104543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 2021_09_02_145937) do
     t.datetime "updated_at", precision: 6, null: false
     t.date "date"
     t.string "category"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "feed_items", force: :cascade do |t|
