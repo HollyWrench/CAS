@@ -5,7 +5,7 @@
       <h2 class="home-column-title">EVENT BOOKINGS:</h2>
       <div style="width:500px">
           <div class="cards">
-      <% @bookings.each do |booking| %>
+      <% @bookings.reverse[0..4].each do |booking| %>
         <% if booking.user_id == current_user.id %>
               <%= cl_image_tag booking.event.photo.key, height: 150, width: 200, crop: :fill %>
                 <p><%=booking.event.name%></p>
