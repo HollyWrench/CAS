@@ -1,12 +1,23 @@
-<div class = "new-event main-container">
+<div class = "new-event form-container">
   <%# <h3>Create a new event below:</h3> %>
   <%= simple_form_for(@event) do |f| %>
     <%= f.input :name, placeholder: "Name", label: false %>
     <%= f.input :location, placeholder: "Location", label: false %>
     <%= f.input :description, placeholder: "Description", label: false %>
-    <%= f.input :category, collection: Event::CATEGORIES, placeholder: "Select category", label: false %>
-    <%= f.input :price, placeholder: "Price", label: false %>
-    <%= f.input :date, placeholder: "Date", label: false %>
+
+    <div class="row">
+      <div class="col">
+        <%= f.input :category, collection: Event::CATEGORIES, prompt: "Select category", label: false, class: "form-control" %>
+        <%# i guess for dropdowns you have to use 'prompt' isntead of 'placeholder' as placeholder didn't work for this one field! %>
+      </div>
+      <div class="col">
+        <%= f.input :price, placeholder: "Price", label: false, class: "form-control"%>
+      </div>
+       <div class="col">
+        <%= f.input :date, placeholder: "Date", label: false, as: :date, html5: true %>
+      </div>
+    </div>
+
     <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %>
     <%= f.button :submit, id: "new-event-sweet-alert-button", class: 'btn btn-primary', value: "Suggest event", style: "width: 100%" %>
   <% end %></p>
