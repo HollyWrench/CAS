@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 2vh;
+  padding-top: 4vh;
+  border-top: 1px solid $cas-lime-green;
   // position: absolute;
   // left: 0;
   // right: 0;
@@ -17,6 +18,6 @@
 }
 
 .fab, .fas {
-    font-size: 60px;
-    margin-bottom: 1rem;
-  }
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
