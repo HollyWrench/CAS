@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get '/profile', to: 'pages#profile'
   resources :events do
     resources :bookings, only: %i[new create index destroy]
+    member do
+      post 'toggle_favorite', to: "events#toggle_favorite"
+    end
   end
   resources :bookings, only: :index
   resources :feed_items

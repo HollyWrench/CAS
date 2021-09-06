@@ -28,17 +28,17 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { priceCalc } from '../components/price';
+import { initMapbox } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   priceCalc();
-  let carousel = Document.querySelector(".carousel")
-  carousel();
+  let carousel = document.querySelector(".carousel")
+  if (carousel) {
+    carousel();
+  }
+  initMapbox();
 });
 
-import { initMapbox } from '../plugins/init_mapbox';
-
-document.addEventListener('turbolinks:load', () => {
-  initMapbox();
-})
+import "controllers"
