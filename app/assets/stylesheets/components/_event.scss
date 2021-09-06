@@ -73,10 +73,10 @@
     text-decoration: none;
     // button to book event
   }
-  // a:hover {
-  //   color: black;
-  //   background-color: white;
-  // }
+  a:hover {
+    box-shadow: 1px 2px $cas-red;
+    border-color: $cas-red;
+  }
 
   img {
     width: 100%;

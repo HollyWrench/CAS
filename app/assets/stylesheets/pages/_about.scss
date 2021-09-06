@@ -1,4 +1,3 @@
-
 .homepage_image{
   max-width: 100%;
   height: auto;
@@ -29,20 +28,6 @@
   margin: 4rem;
 }
 
-.application {
-  margin: 60px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  border: 1px solid $cas-red;
-  padding: 30px;
-  color: white;
-
-  h3 {
-    font-size: 32px;
-  }
-}
-
 .home-app-info {
   padding: 20px;
   display: flex;
@@ -61,38 +46,53 @@
 }
 
 .app-button {
-  // background: white;
   display: flex;
   width: 100%;
   justify-content: flex-end;
   a {
-    padding: 4px;
-    padding-top: 26px;
+    padding: 8px;
+    margin-top: 70px;
     margin-right: 40px;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    // left: 30%;
-    // margin-right: 120px;
-    // margin-bottom: 120px;
-    border: solid 1px $cas-red;
-    color: $cas-turquoise;
-    background-color: transparent;
-    font-size: 35px;
+    width: auto;
+    height: 60px;
+    border-radius: 16px;
+    border: solid 2px $cas-red;
+    color: $white;
+    background-color: black;
+    // background-color: $cas-red;
+    // box-shadow: 1px 2px black;
+    font-size: 26px;
     font-weight: lighter;
     text-decoration: none;
     text-align: center;
   }
+  a:hover {
+    // font-weight: normal;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 1px 2px $cas-red;
+  }
 }
+
+
+.btn-grad {background-image: linear-gradient(to right, #FDFC47 0%, #24FE41  51%, #FDFC47  100%)}
+.btn-grad {
+
+  transition: 0.5s;
+  background-size: 200% auto;
+  // color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 16px;
+  display: block;
+}
+
 
 h2 {
   padding: 60px;
   padding-bottom: 0px;
 }
 
-p {
-  padding: 0px 60px;
-}
 
 .about-info {
   padding: 60px;
@@ -102,5 +102,34 @@ li {
   list-style-type: circle;
   padding: 10px;
   margin-left: 20px;
-  color: white ;
+  // color: black ;
+}
+
+.about-card {
+  background-color: white;
+  border-radius: 16px;
+  color: black;
+}
+
+.application-card {
+  width: 1040px;
+  background-color: white;
+  // background: linear-gradient(#f5d9e1 40%, #fc336c 80%);
+  margin: 60px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid $cas-red;
+  border-radius: 16px;
+  padding: 30px;
+  color: black;
+  p {
+    padding: 0px 60px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h2, h3 {
+    color: black;
+  }
 }
