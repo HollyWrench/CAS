@@ -7,6 +7,11 @@ class BookingsController < ApplicationController
     @booking = Booking.new
     @event = Event.find(params[:event_id])
     @user = current_user
+
+      @markers = [{
+        lat: @event.latitude,
+        lng: @event.longitude
+      }]
   end
 
   def create
