@@ -1,5 +1,6 @@
 .liked {
   color: #F4225E !important;
+  opacity: 1 !important;
 }
 
 
@@ -12,5 +13,8 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  color: black;
+  color: gray;
+  opacity: .6;
+//  text-shadow: -2px 2px 2px -2px black;
+text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
 }

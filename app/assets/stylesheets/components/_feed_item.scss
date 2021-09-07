@@ -49,6 +49,12 @@
   // what does this do???^^^
 }
 
+.profile-flip {
+  width: 518px;
+  height: 384px;
+  margin-bottom: 250px;
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -89,6 +95,11 @@
   width: 100%;
   margin-bottom: 20px;
   padding: 30px;
+}
+
+.saved-img {
+  height: 200px;
+  width: 300px;
 }
 
 // https://stackoverflow.com/questions/59927377/how-to-flip-image-on-click-in-javascript
