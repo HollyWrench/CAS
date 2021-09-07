@@ -1,34 +1,35 @@
-.homepage_image{
+.homepage_image {
   max-width: 100%;
   height: auto;
   border-bottom: 2px solid #33FF00;
 }
 
-.vertical_image{
-  font-size: 25px;
-  padding: 1em;
-  margin: 60px;
-  color: white;
-  border: 1px solid #33FF00;
-}
-
-.help{
+.zoom2, .zoom4 {
+  width: 350px;
   border-style: solid;
   border: 1px solid $cas-red;
   margin-bottom: 4rem;
 }
 
-.help2{
+.zoom{
+  width: 350px;
   border-style: solid;
   border: 1px solid $cas-turquoise;
-  height: auto;
+  margin-bottom: 4rem;
 }
 
-.holder{
+.zoom3{
+  width: 350px;
+  border-style: solid;
+  border: 1px solid $cas-lime-green;
+  margin-bottom: 4rem;
+}
+
+.zoom-photos {
   margin: 4rem;
 }
 
-.home-app-info {
+.application-committee-info {
   padding: 20px;
   display: flex;
   // flex-direction: column;
@@ -87,12 +88,6 @@
   display: block;
 }
 
-
-
-.about-info {
-  padding: 60px;
-}
-
 li {
   list-style-type: circle;
   padding: 10px;
@@ -100,19 +95,28 @@ li {
   // color: black ;
 }
 
-.about-card {
+.about-card{
+  font-size: 25px;
+  padding: 1em;
+  margin: 60px;
+  color: white;
+  border: 1px solid #33FF00;
   background-color: white;
   border-radius: 16px;
   color: black;
+  p {
+    padding: 60px;
+    margin-bottom: 0px;
+  }
 }
 
 .application-card {
-  width: 1040px;
-  background-color: white;
+  // width: 1040px;
   // background: linear-gradient(#f5d9e1 40%, #fc336c 80%);
+  background-color: white;
   margin: 60px;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   font-size: 20px;
   border: 1px solid $cas-red;
   border-radius: 16px;
@@ -120,19 +124,65 @@ li {
   color: black;
   p {
     padding: 0px 60px;
+    margin-top: 10px;
   }
   h3 {
     font-size: 32px;
+    margin-bottom: 10px;
   }
   h2, h3 {
     color: black;
     padding-left: 60px;
   }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
 }
 
-.about-header {
+.about-info {
   h2 {
     padding: 60px;
     padding-bottom: 0px;
   }
 }
+
+.about-page-cards-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-about-page-container {
+  display: flex;
+}
+
+.application-card, .about-card {
+  width: 90%;
+}
+
+// .bloody-annoying-arrow {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 50px;
+//   i {
+//     color: $cas-red;
+//   }
+// }
+
+
+// .arrow1 {
+//   animation: slide1 1s ease-in-out infinite;
+//   margin-left: 9px;
+// }
+
+// @keyframes slide1 {
+//   0%,
+//   100% {
+//     transform: translate(0, 0);
+//   }
+
+//   50% {
+//     transform: translate(0px, 10px);
+//   }
+// }
