@@ -6,7 +6,7 @@
   grid-gap: 16px;
   list-style: none;
   img {
-    border: 1px solid $cas-pink;
+    border: 1px solid $cas-lime-green;
     width: 100%;
     height: 260px;
     border-radius: 8px;
@@ -31,17 +31,17 @@
   margin-bottom: 0px;
 }
 
-.events-card {
-  position: relative;
-  height: 600px;
-  border: solid 1px white;
-  border-radius: 8px;
-  list-style: none;
-  // margin-bottom: 16px;
-  margin-top: 16px;
-  background-color: white;
-  // padding: 30px;
-}
+// .events-card {
+//   position: relative;
+//   height: 600px;
+//   border: solid 1px white;
+//   border-radius: 8px;
+//   list-style: none;
+//   // margin-bottom: 16px;
+//   margin-top: 16px;
+//   background-color: white;
+//   // padding: 30px;
+// }
 
 .flip-card {
   background-color: transparent;
