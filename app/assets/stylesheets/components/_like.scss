@@ -1,16 +1,20 @@
 .liked {
-  color: #F4225E !important;
+  color: $cas-red !important;
 }
 
 
 .heart-icon {
-    color: transparent;
-    text-shadow: 0 0 #000;
+  color: transparent;
+  text-shadow: 0 0 #000;
+  font-size: 30px;
+  -webkit-text-stroke: 1px $cas-red;
+  text-shadow: 0 0 10px $cas-red;
+	// -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 }
 
 .heart-pos {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: black;
+  color: white;
 }
