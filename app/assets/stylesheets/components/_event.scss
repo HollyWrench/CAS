@@ -30,41 +30,27 @@
   margin-right: -2px;
 }
 
-// .header-and-filter {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-// }
-
-// .filter {
-//   display: flex;
-//   flex-direction: row;
-//   h4 {
-//     font-size: 34px;
-//     color: white;
-//     padding-top: 12px;
-//   }
-// }
-
 .filter {
   display: flex;
-  // justify-content: space-around;
-  // max-width: 600px;
   max-width: 1200px;
   font-size: 16px;
   color: white;
   padding-left: 62px;
   padding-top: 10px;
   .filters_category {
+    // THE WORDS AND HIDDEN RADIO BUTTONS
     display: flex;
     position: absolute;
     top: 258px;
   }
   .collection_radio_buttons:hover {
+    // THE WORDS
     color: $cas-red;
   }
   .form-check-input {
+    // THE RADIO BUTTONS
     transform: scale(0);
+    // HIDING THEM
   }
 }
 
