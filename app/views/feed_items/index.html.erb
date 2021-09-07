@@ -5,6 +5,11 @@
       <% if feed_item.url %>
         <%# <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
         <%= link_to cl_image_tag(feed_item.photo.key), feed_item.url, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
+        <div data-controller="favorite">
+          <%= link_to toggle_favorite_feed_item_path(feed_item), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
+            <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(feed_item) %>"></i>
+          <% end %>
+        </div>
       <% end %>
 
       <% if feed_item.description %>
@@ -14,10 +19,15 @@
           </div>
           <div class="flip-card-back">
             <li class="feed-item-info">
-              <p><%=feed_item.description%></p>
+            <p><%=feed_item.description%></p>
             </li>
           </div>
         </div>
+      <div data-controller="favorite">
+        <%= link_to toggle_favorite_feed_item_path(feed_item), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
+          <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(feed_item) %>"></i>
+        <% end %>
+      </div>
       <% end %>
     </div>
   <% end %>

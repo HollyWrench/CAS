@@ -38,11 +38,6 @@
           <p><strong>LOCATION: </strong><%=event.location%></p>
         </li>
         <%=link_to "MORE INFO", new_event_booking_path(event)%>
-        <div data-controller="favorite">
-          <%= link_to toggle_favorite_event_path(event), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
-                <i data-favorite-target="heart" class="fas fa-heart <%= 'red' if current_user.favorited?(event) %>"></i>
-          <% end %>
-        </div>
       </div>
     <% end %>
     <div class="new-event-card">

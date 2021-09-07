@@ -1,6 +1,16 @@
 class FeedItemsController < ApplicationController
 
-  before_action :is_admin?, except: :index
+  before_action :is_admin?, except: [:index, :toggle_favorite]
+  before_action :authenticate_user!, only: :toggle_favorite
+
+
+  def toggle_favorite
+    @feed_item = FeedItem.find_by(id: params[:id])
+    current_user.favorited?(@feed_item) ?
+    current_user.unfavorite(@feed_item) :
+    current_user.favorite(@feed_item)
+    # redirect_to events_path, notice: current_user.favorited?(@event) ? "liked" : "unliked"
+  end
 
   def index
     @feed_items = FeedItem.all
