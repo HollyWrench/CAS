@@ -1,20 +1,26 @@
 .liked {
-  color: #F4225E !important;
   opacity: 1 !important;
+  color: $cas-red !important;
+  font-size: 30px;
+  // otherwise it goes massive when you like/unlike it
 }
 
 
 .heart-icon {
-    color: transparent;
-    text-shadow: 0 0 #000;
+  color: transparent;
+  text-shadow: 0 0 #000;
+  font-size: 30px;
+  -webkit-text-stroke: 1px $cas-red;
+  text-shadow: 0 0 10px $cas-red;
+	// -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 }
 
 .heart-pos {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: gray;
   opacity: .6;
-//  text-shadow: -2px 2px 2px -2px black;
-text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+  //  text-shadow: -2px 2px 2px -2px black;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+  color: white;
 }
