@@ -10,8 +10,9 @@ class EventsController < ApplicationController
   end
 
   def index
-    if params[:filter].present?
-      @events = Event.where(category: params[:filter])
+    if params[:filters].present?
+      @events = Event.where(category: params[:filters][:category])
+      # was 'filter' and [:filter] with no [:category] after until I added the simple form to filter the events by category
     else
       @events = Event.all
     end
