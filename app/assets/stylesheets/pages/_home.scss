@@ -5,6 +5,8 @@ h1 {
 }
 
 .adjust-cas-logo {
+  display: flex;
+  align-items: center;
   // padding-right: 90px;
   color: white;
 }
@@ -211,8 +213,11 @@ svg {
 
 .home-title {
   position: absolute;
+  height: 62vh !important;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
-  left: 280px;
+  // left: 280px;
   // THIS WAS MAKING IT NOT BE CENTERED!!!!!!!!!!!!!!!!
   top: 120px;
   -webkit-text-stroke: 1px #F4225E;
@@ -239,4 +244,8 @@ svg {
   height: 100%;
   color: black;
   opacity: 0.4;
+}
+
+html, body {
+    min-height: 100%;
 }
