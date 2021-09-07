@@ -82,6 +82,13 @@
 
 .feed-item-photo {
   position: relative;
+
+}
+
+.profile-feed-item-photo img {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 30px;
 }
 
 // https://stackoverflow.com/questions/59927377/how-to-flip-image-on-click-in-javascript
