@@ -49,6 +49,7 @@
 // .flip-card:hover, .flip-card-inner
 .flipped {
   transform: rotateY(180deg) !important;
+  // background: linear-gradient(rgba(0, 0, 0, 0.346) 0%, rgba(0, 0, 0, 0.5) 60%) !important;
 }
 
 .flip-card-front, .flip-card-back {
