@@ -23,11 +23,11 @@
             </li>
           </div>
         </div>
-      <div data-controller="favorite">
+        <div data-controller="favorite">
         <%= link_to toggle_favorite_feed_item_path(feed_item), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
           <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(feed_item) %>"></i>
         <% end %>
-      </div>
+        </div>
       <% end %>
     </div>
   <% end %>
