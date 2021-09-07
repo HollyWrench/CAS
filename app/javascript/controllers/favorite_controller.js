@@ -13,7 +13,8 @@ export default class extends Controller {
   static targets = [ "heart" ]
 
   toggleFavorite() {
-    this.heartTarget.classList.toggle('red');
+    this.heartTarget.classList.toggle('liked');
+    this.heartTarget.classList.toggle('heart-icon')
   };
 
 }

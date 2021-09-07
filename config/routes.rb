@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   get '/profile', to: 'pages#profile'
   resources :events do
     resources :bookings, only: %i[new create index destroy]
-    member do
-      post 'toggle_favorite', to: "events#toggle_favorite"
-    end
   end
   resources :bookings, only: :index
-  resources :feed_items
+
+  resources :feed_items, only: :index do
+    member do
+      post 'toggle_favorite', to: "feed_items#toggle_favorite"
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
