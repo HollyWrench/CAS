@@ -5,9 +5,11 @@
     <%= f.input :location, placeholder: "Location", label: false %>
     <%= f.input :description, placeholder: "Description", label: false %>
 
+
     <div class="row">
       <div class="col">
         <%= f.input :category, collection: Event::CATEGORIES, prompt: "Select category", label: false, class: "form-control" %>
+        <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %> %>
         <%# i guess for dropdowns you have to use 'prompt' isntead of 'placeholder' as placeholder didn't work for this one field! %>
       </div>
       <div class="col">
