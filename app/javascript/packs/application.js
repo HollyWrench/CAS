@@ -29,6 +29,7 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { priceCalc } from '../components/price';
 import { initMapbox } from '../plugins/init_mapbox';
+import { flip } from '../components/feedItemToggle';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -39,6 +40,7 @@ document.addEventListener('turbolinks:load', () => {
     carousel();
   }
   initMapbox();
+  flip();
 });
 
 import "controllers"
