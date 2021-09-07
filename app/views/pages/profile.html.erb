@@ -30,48 +30,27 @@
     <div class="item1">
       <h2 class="home-column-title">SAVED CONTENT:</h2>
       <% @feed_items.each do |f| %>
-        <div class="feed-items-card">
+        <%# <div class="feed-items-card"> %>
           <% if current_user.favorited?(f) %>
             <% if f.url %>
-              <%= link_to cl_image_tag(f.photo.key), f.url, class: "profile-feed-item-photo", href: f.url, target: "blank"%>
-              <div data-controller="favorite">
-                <%= link_to toggle_favorite_feed_item_path(f), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
-                  <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(f) %>"></i>
-                <% end %>
-              </div>
+              <%= link_to cl_image_tag(f.photo.key), f.url, class: "profile-feed-item-photo mt-5", href: f.url, target: "blank"%>
             <% end %>
             <% if f.description %>
-              <div class="flip-card">
-                <div class="flip-card-front">
-                  <%= cl_image_tag f.photo.key, height: 150, width: 200, crop: :fill, class: "profile-feed-item-photo flip-card-front"%>
-                </div>
-                <div class="flip-card-back">
+              <div class="profile-flip">
+                <div class="">
                   <li class="feed-item-info">
+                  <%= cl_image_tag f.photo.key, crop: :fill, class: "profile-feed-item-photo mt-5 saved-img"%>
                     <p><%=f.description%></p>
                   </li>
                 </div>
-              </div>
-              <div data-controller="favorite">
-                <%= link_to toggle_favorite_feed_item_path(f), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
-                  <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(f) %>"></i>
-                <% end %>
+                <div class="">
+                </div>
               </div>
             <% end %>
           <% end %>
-        </div>
+        <%# </div> %>
       <% end %>
     </div>
 
-    <div class="item2">
-      <%# <h2 class="home-column-title">MY INFO:</h2> %>
-      <ul>
-        <%# <li> %>
-          <%# <%= current_user.first_name %>
-          <%# <%= current_user.last_name %>
-        <%# </li> %>
-        <%# <li> %>
-        <img class="avatar" src="https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630602938/avatar.png" alt="profile pic">
-        <%# </li> %>
-      </ul>
-    </div>
+
   </div>
