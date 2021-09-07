@@ -53,9 +53,15 @@
   max-width: 1200px;
   font-size: 16px;
   color: white;
-  padding-left: 25px;
+  padding-left: 62px;
+  padding-top: 10px;
   .filters_category {
     display: flex;
+    position: absolute;
+    top: 258px;
+  }
+  .collection_radio_buttons:hover {
+    color: $cas-red;
   }
   .form-check-input {
     transform: scale(0);
