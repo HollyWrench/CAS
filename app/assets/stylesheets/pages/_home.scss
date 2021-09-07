@@ -212,7 +212,8 @@ svg {
 .home-title {
   position: absolute;
   z-index: 3;
-  left: 280px;
+  left: 145px;
+// left: 145px; when on 100% browser size
   // THIS WAS MAKING IT NOT BE CENTERED!!!!!!!!!!!!!!!!
   top: 120px;
   -webkit-text-stroke: 1px #F4225E;
