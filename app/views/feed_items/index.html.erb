@@ -1,3 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <h2 class="feed-header">CONTEMPORARY CONTENT</h2>
 <div class="other-container">
   <% @feed_items.each do |feed_item| %>
@@ -14,8 +16,10 @@
 
       <% if feed_item.description %>
         <div class="flip-card">
-          <div class="flip-card-front">
-            <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo flip-card-front"%>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo flip-card-front"%>
+            </div>
           </div>
           <div class="flip-card-back">
             <li class="feed-item-info">
