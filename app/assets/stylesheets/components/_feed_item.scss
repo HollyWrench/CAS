@@ -1,5 +1,4 @@
 .other-container {
-  // justify-items: center;
   padding: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -11,18 +10,12 @@
     height: 260px;
     border-radius: 8px;
   }
-  // img {
-    // transform: rotate(90deg);
-    // crop: fill;
-  // }
+
   .feed-item-info {
     color: white;
   }
 }
 
-// img :hover {
-//   transform: rotateY(180deg);
-// }
 .feed-header {
   padding: 60px;
   padding-bottom: 0px;
@@ -30,18 +23,6 @@
   color: white;
   margin-bottom: 0px;
 }
-
-// .events-card {
-//   position: relative;
-//   height: 600px;
-//   border: solid 1px white;
-//   border-radius: 8px;
-//   list-style: none;
-//   // margin-bottom: 16px;
-//   margin-top: 16px;
-//   background-color: white;
-//   // padding: 30px;
-// }
 
 .flip-card {
   background-color: transparent;
