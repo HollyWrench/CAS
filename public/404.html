@@ -8,7 +8,7 @@
     background-color: black;
     color: white;
     text-align: center;
-    font-family: arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
   }
 
@@ -53,17 +53,24 @@
     color: #33FF00;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
+
+  img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+  }
   </style>
 </head>
 
 <body class="cas-error-page">
-  <!-- This file lives in public/404.html -->
   <div class="message">
     <div>
       <h1>The page you were looking for doesn't exist, sorry!</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+      <p>Type www.cas-art.me to return to our homepage.</p>
+      <img src="./images/CASLOGO.png" alt="">
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <p>xxx see you soon xxx</p>
+    <!-- <%= cl_image_tag booking.event.photo.key, height: 150, width: 200, crop: :fill %> -->
   </div>
 </body>
 </html>
