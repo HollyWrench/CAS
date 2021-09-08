@@ -27,6 +27,7 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { fadeIn } from '../components/fadeIn';
 import { priceCalc } from '../components/price';
 import { initMapbox } from '../plugins/init_mapbox';
 import { flip } from '../components/feedItemToggle';
@@ -43,6 +44,7 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
   flip();
   previewImageOnFileSelect();
+  fadeIn();
 });
 
 import "controllers"
