@@ -108,6 +108,10 @@
 
 }
 
+.new-event-card:hover {
+  box-shadow: 1px 2px $cas-turquoise;
+}
+
 .other-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

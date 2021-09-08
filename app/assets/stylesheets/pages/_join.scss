@@ -135,6 +135,15 @@
   right: 60px;
   bottom: 80px;
 }
+
+.apply-now-button:hover {
+  box-shadow: 1px 2px $cas-red;
+}
+
+.outside-button:hover {
+  box-shadow: 1px 2px $cas-turquoise;
+}
+
 // .new-event-card {
 //   a {
 //     left: 4%;
