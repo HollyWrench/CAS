@@ -118,6 +118,15 @@
 //   padding-left: 0px;
 // }
 
+.events-card {
+  a {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .name, .info {
+    margin-left: 0px;
+  }
+}
 
 .other-container {
   display: grid;
