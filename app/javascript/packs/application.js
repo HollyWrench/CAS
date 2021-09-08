@@ -30,6 +30,7 @@ import "bootstrap";
 import { priceCalc } from '../components/price';
 import { initMapbox } from '../plugins/init_mapbox';
 import { flip } from '../components/feedItemToggle';
+import { previewImageOnFileSelect } from '../components/photo_preview';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -41,6 +42,7 @@ document.addEventListener('turbolinks:load', () => {
   }
   initMapbox();
   flip();
+  previewImageOnFileSelect();
 });
 
 import "controllers"
