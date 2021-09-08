@@ -2,8 +2,9 @@
 
   <div class="profile-wrapper">
     <div class="item1">
-      <h2 class="home-column-title">EVENT BOOKINGS:</h2>
+      <h2 class="home-column-title">MY EVENT BOOKINGS:</h2>
       <%# style="width:500px" %>
+      <div class="cards", style="margin: 30px 51px;">
         <% @bookings.reverse[0..4].each do |booking| %>
           <% if booking.user_id == current_user.id %>
             <div class="cards">
@@ -28,7 +29,7 @@
     </div>
 
     <div class="item1">
-      <h2 class="home-column-title">SAVED CONTENT:</h2>
+      <h2 class="home-column-title">MY SAVED CONTENT:</h2>
       <% @feed_items.each do |f| %>
         <%# <div class="feed-items-card"> %>
           <% if current_user.favorited?(f) %>

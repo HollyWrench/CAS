@@ -72,7 +72,7 @@ eigth_event.save!
 file9 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491527/Yurie%20Nagashima.png')
 yurie_description = "Self portrait, Yurie Nagashima.
 
-The self-portrait means that you can take on both roles, as a model and as a photographer. When you have a camera on a tripod, you have the space in front of the camera and also the space behind the camera. It's very symbolic. It’s a way of taking action against the historical roles of the male and female in photography… It is this very idea, the production of a truth about a sitter that is not dictated by anyone other than the sitter her or himself, that should be seen as the driving force behind self-portraiture."
+The self-portrait means that you can take on both roles, as a model and as a photographer. It is symbolic. It is this very idea, the production of a truth about a sitter that is not dictated by anyone other than the sitter her or himself, that should be seen as the driving force behind self-portraiture."
 feed_item = FeedItem.new(description: yurie_description)
 feed_item.photo.attach(io: file9, filename: 'Yurie Nagashima.png', content_type: 'image/png')
 feed_item.save!
@@ -90,13 +90,10 @@ feed_item2.save!
 file12 = URI.open("https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491557/Olafur%20E.png")
 feed_item3 = FeedItem.new(description: "‘Ice Watch’, Olafur Eliasson, 2014.
 
-Scandinavian artist Olafur Eliasson installed this piece outside the Tate Modern in London in 2014. The installation consisted of 30 melting blocks of ice brought from a fjord in Greenland. Categorised as ‘environmental art’, it stood as a reminder of the dangers of the warming of the planet.
+Scandinavian artist Olafur Eliasson installed this piece outside the Tate Modern in London in 2014. The installation consisted of 30 melting blocks of ice acting as a reminder of the dangers of the warming of the planet.
 
-When they were installed, each ice block weighed between 1.5 and 5 tonnes. The estimated energy cost for bringing one of these blocks to London was equal to one person flying from London to the Arctic and back to witness the ice melting.
+The estimated energy cost for bringing one of these blocks to London was equal to one person flying from London to the Arctic and back to witness the ice melting.")
 
-By bringing the ice to London, and creating a temporary sculpture similar to the form of an ancient stone circle, Eliasson enabled viewers to engage with the ice directly. They could look at it, move around it and touch it.
-
-'I think it matters for people to actually put their ear to the ice and suddenly realise that is has a very subtle cracking, hopping, crisp noise because the melting releases pressure bubbles that have been stuck in the ice for 10,000 years,' Eliasson stated.")
 feed_item3.photo.attach(io: file12, filename: 'Yurie Nagashima.png', content_type: 'image/png')
 feed_item3.save!
 
@@ -105,9 +102,9 @@ feed_item4 = FeedItem.new(url: "https://www.youtube.com/watch?v=DDaldVHUedI")
 feed_item4.photo.attach(io: file13, filename: 'Titus Youtube.png', content_type: 'image/png')
 
 file13 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491535/Kip%20Omolade.png')
-feed_item4 = FeedItem.new(description: "DioKipvadiova series, Kip Omolade.
+feed_item4 = FeedItem.new(description: "DioKipvadiova series, Kip Omolade, hyper-realistic oil painting.
 
-Omolade produces these exquisite, large-scale, hyper-realistic oil paintings through a labour-intensive process. He first makes a plaster mould of a model’s face, casts the mould in resin, dips it in chrome, photographs the sculpted mask, and then paints it. Omolade’s use of masks in his art is inspired by his studies of the bronze and gold masks from the ancient Kingdom of Ife in West Africa. These were so impressive that when they were first discovered by Germans at the turn of the 20th century, it wasn’t believed that they could have been made by Africans. Instead they were used as evidence for the existence of the lost city of Atlantis.")
+Omolade’s use of masks in his art is inspired by his studies of the bronze and gold masks from the ancient Kingdom of Ife in West Africa. These were so impressive that when they were first discovered by Germans at the turn of the 20th century, it wasn’t believed that they could have been made by Africans. Instead they were used as evidence for the existence of the lost city of Atlantis.")
 feed_item4.photo.attach(io: file13, filename: 'Kip Omolade.png', content_type: 'image/png')
 feed_item4.save!
 
@@ -124,11 +121,9 @@ feed_item6.save!
 file16 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491551/Luap_xv1oew.png')
 feed_item7 = FeedItem.new(description: "‘Pull Yourselves Together’ 2021.
 
-LUAP, or Paul Robinson, is a British contemporary artist best known for his iconic Pink Bear series. He fuses painting and photography to create captivating images of a bright pink bear in environments as diverse as dingy hotel rooms and Chilean glaciers.
+LUAP's iconic pink bear was born from one of the artist’s childhood memories of a pink Care Bare, and became a symbol of self-improvement and an alter ego through which to grow and heal.
 
-The pink bear was born from one of the artist’s childhood memories of a pink Care Bare, and became a symbol of self-improvement and an alter ego through which to grow and heal.
-
-With the pink bear, Robinson has visited every continent bar Antarctica, and largely tackled his depression and social anxiety. His mental health journey is reflected in his images of the pink bear - in earlier paintings the bear appears alone, uncertain, lost, while in later paintings it appears more confident and social. ")
+With the pink bear, Robinson has visited every continent bar Antarctica, and largely tackled his depression and social anxiety. His mental health journey is reflected in his images of the pink bearas it becomes more confident and social. ")
 feed_item7.photo.attach(io: file16, filename: 'Luap_xv1oew.png', content_type: 'image/png')
 feed_item7.save!
 
