@@ -6,22 +6,24 @@
 
 .zoom2, .zoom4 {
   width: 350px;
+  height: max-content;
   border-style: solid;
   border: 1px solid $cas-turquoise;
   margin-bottom: 20px;
-  margin-right: 60px;
+  // margin-right: 60px;
 }
 
 .zoom{
   width: 350px;
   border-style: solid;
   border: 1px solid $cas-turquoise;
-  margin-bottom: 20px;
-  margin-top: 60px;
+  margin-bottom: 40px;
+  // margin-top: 60px;
 }
 
 .zoom3{
   width: 350px;
+  height: max-content;
   border-style: solid;
   border: 1px solid $cas-turquoise;
   margin-bottom: 20px;
@@ -29,6 +31,16 @@
 
 .zoom-photos {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px 0 100px;
+}
+
+.phrase-cards {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px 50px 100px;
 }
 
 .application-committee-info {
@@ -101,6 +113,7 @@ li {
   font-size: 25px;
   padding: 1em;
   margin: 60px;
+  margin-left: 72px;
   color: white;
   border: 1px solid $cas-lime-green;
   background-color: white;
@@ -108,6 +121,12 @@ li {
   color: black;
   p {
     padding: 60px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    padding: 60px;
+    padding-bottom: 0px;
     margin-bottom: 0px;
   }
 }
