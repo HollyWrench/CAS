@@ -3,34 +3,9 @@
 <h2 class="feed-header">CONTEMPORARY CONTENT</h2>
 <div class="other-container">
   <% @feed_items.each do |feed_item| %>
-    <div class="feed-items-card" data-aos="zoom-out-up" data-aos-duration=90>
-      <% if feed_item.url %>
+    <div class="feed-items-card" data-aos="zoom-out-up" data-aos-duration=90 style="margin-bottom: 280px;">
         <%# <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <%= cl_image_tag feed_item.photo.key, height: 150, width: 200, crop: :fill, class: "feed-item-photo flip-card-front"%>
-            </div>
-            <div class="flip-card-back">
-              <li class="feed-item-info">
-                <%# <a href="https://www.artefact-edinburgh.co.uk/blog/democratisation-of-the-art-market-the-artist-support-pledge-as-a-tool-for-change" target="_blank"> %>
-                <a>
-                  <%# class="url-button" href=#{feed_item.url} target="blank" %>
-                  <%= link_to feed_item.url, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
-                </a>
-                <%# <%= link_to cl_image_tag(feed_item.photo.key), feed_item.url, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
-              </li>
-            </div>
-          </div>
-        </div>
-        <div data-controller="favorite">
-          <%= link_to toggle_favorite_feed_item_path(feed_item), remote: true, method: :post, data: {action: 'click->favorite#toggleFavorite'} do %>
-            <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(feed_item) %>"></i>
-          <% end %>
-        </div>
-      <% end %>
 
-      <% if feed_item.description %>
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -38,7 +13,13 @@
             </div>
             <div class="flip-card-back">
               <li class="feed-item-info">
-              <p><%=feed_item.description%></p>
+                <%#   IF STATEMENT GOES HERE %>
+                <% if feed_item.description %>
+                  <p><%=feed_item.description%></p>
+                <% end %>
+                <% if feed_item.url %>
+                  <%= link_to "CLICK TO SEE ARTICLE", feed_item.url, target: "blank", class: "url-button" %>
+                <% end %>
               </li>
             </div>
           </div>
@@ -48,7 +29,10 @@
           <i data-favorite-target="heart" class="fas fa-heart heart-icon heart-pos <%= 'liked' if current_user.favorited?(feed_item) %>"></i>
         <% end %>
         </div>
-      <% end %>
     </div>
   <% end %>
 </div>
+
+<%# <a> %>
+  <%# <%= link_to cl_image_tag(feed_item.photo.key), feed_item.url, class: "feed-item-photo", href: feed_item.url, target: "blank" %>
+<%# </a> %>
