@@ -1,0 +1,42 @@
+<div class="application-card mt-5">
+  <div class="application-info">
+    <h2>JOIN OUR COMMITTEE!</h2>
+    <h3>Applications to be on CAS committee are now open.</h3>
+    <p>Apply now to stand for a position in our upcoming election (:<p>
+    <%# <p>Positions available:</p> %>
+    <div class="application-committee-info">
+      <div class="committee-positions">
+        <ul>
+          <li>President x1</li>
+          <li>Social Secretary x1</li>
+          <li>Treasurer x1</li>
+          <li>Secretary x1</li>
+        </ul>
+      </div>
+      <div class="committee-positions">
+        <ul>
+          <li>Events Manager x1</li>
+          <li>Social Secretary x1</li>
+          <li>Publicity Officer x1</li>
+          <li>Content Creator x4</li>
+        </ul>
+      </div>
+      <div class="app-button">
+        <a href="#">APPLY NOW</a>
+      </div>
+    </div>
+    <%# <div class="blood-annoying-arrow">
+      <i class="fa fa-long-arrow-right arrow1" aria-hidden="true" style="color: black"></i>
+    </div> %>
+  </div>
+</div>
+
+<div class="application-card mt-2">
+  <%= simple_form_for :join, url: joins_path do |form| %>
+    <h2>Name: <%="#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}" %></h2>
+    <h2>Email: <%="#{current_user.email}" %></h2>
+    <%= form.input :year, collection: ["Year 1", "Year 2", "Year 3", "Year 4", "Masters", "PhD"] %>
+    <%= form.input :position, collection: ["President", "Secretary", "Treasurer", "Social Secretary", "Publicity Officer", "Events Manager", "Social Media Manager", "Content Creator"] %>
+    <%= form.button :submit, id: "sweet-alert-button", class: 'btn btn-primary', value: "Suggest event" %>
+  <% end %>
+</div>
