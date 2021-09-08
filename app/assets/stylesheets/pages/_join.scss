@@ -12,6 +12,7 @@
 .phrase-card {
   width: 350px;
   margin-left: 0;
+  border-radius: 16px;
   h2 {
     font-size: 20px;
   }
@@ -24,16 +25,19 @@
   border-radius: 16px;
   padding: 16px;
   margin-bottom: 20px;
-  color: white;
+  // color: white;
 }
 
 .phrase-card, .app-phrase-card {
-  background-color: $cas-red;
+  background-color: white;
+  color: black;
+  border: 1px solid $cas-red;
 }
 
 .inverse-phrase-card {
   background: transparent;
   border: 1px solid $cas-red;
+  color: white;
 }
 
 .phrase-card, .app-phrase-card, .inverse-phrase-card  {
@@ -47,6 +51,9 @@
   margin-top: 60px;
   p {
     font-size: 20px;
+  }
+  h3 {
+    color: black;
   }
 }
 

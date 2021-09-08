@@ -33,14 +33,14 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  margin: 0 100px 0 100px;
+  margin: 0 80px;
 }
 
 .phrase-cards {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  margin: 0 100px 50px 100px;
+  margin: 0 80px 50px 80px;
 }
 
 li {
@@ -90,4 +90,16 @@ li {
 
 .application-card, .about-card {
   width: 90%;
+}
+
+.phrase-card-about {
+  width: 350px;
+  padding: 10px 30px;
+  margin-left: 0;
+  border-radius: 16px;
+  h2 {
+    font-size: 20px;
+  }
+  background: $cas-red;
+  color: black;
 }
