@@ -1,3 +1,13 @@
+<div id="thing" class="application-card mt-2 m-fadeOut">
+  <%= simple_form_for :join, url: joins_path do |form| %>
+    <h2>Name: <%="#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}" %></h2>
+    <h2>Email: <%="#{current_user.email}" %></h2>
+    <%= form.input :year, collection: ["Year 1", "Year 2", "Year 3", "Year 4", "Masters", "PhD"] %>
+    <%= form.input :position, collection: ["President", "Secretary", "Treasurer", "Social Secretary", "Publicity Officer", "Events Manager", "Social Media Manager", "Content Creator"] %>
+    <%= form.button :submit, id: "sweet-alert-button", class: 'btn btn-primary', value: "Submit Your Application" %>
+  <% end %>
+</div>
+
 <div class="application-card mt-5">
   <div class="application-info">
     <h2>JOIN OUR COMMITTEE!</h2>
@@ -22,24 +32,11 @@
         </ul>
       </div>
       <div class="app-button">
-        <a href="#">APPLY NOW</a>
+        <button id="tog">Apply now!</button>
       </div>
     </div>
     <%# <div class="blood-annoying-arrow">
       <i class="fa fa-long-arrow-right arrow1" aria-hidden="true" style="color: black"></i>
     </div> %>
   </div>
-</div>
-
-<div class="application-card mt-2">
-  <%= simple_form_for :join, url: joins_path do |form| %>
-    <p><strong>NAME:</strong> <%="#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}" %></p>
-    <p><strong>EMAIL:</strong> <%="#{current_user.email}" %></p>
-    <div class="application-input">
-      <%= form.input :year, collection: ["Year 1", "Year 2", "Year 3", "Year 4", "Masters", "PhD"] %>
-      <%= form.input :position, collection: ["President", "Secretary", "Treasurer", "Social Secretary", "Publicity Officer", "Events Manager", "Social Media Manager", "Content Creator"] %>
-      <%= form.input :application, placeholder: "Write a short description of why you want to join our committee, and what you would bring to CAS!" %>
-      <%= form.button :submit, id: "sweet-alert-button", class: 'btn btn-primary', value: "Submit Your Application" %>
-    </div>
-  <% end %>
 </div>
