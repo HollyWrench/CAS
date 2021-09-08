@@ -9,7 +9,9 @@
     <div class="row">
       <div class="col">
         <%= f.input :category, collection: Event::CATEGORIES, prompt: "Select category", label: false, class: "form-control" %>
-        <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %> %>
+        <%# <%= f.input :photo, as: :file %>
+        <%= f.input :photo, input_html: { class: 'd-none', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+        <%= image_tag "", width: 300, class: "hidden", id: "photo-preview" %>
         <%# i guess for dropdowns you have to use 'prompt' isntead of 'placeholder' as placeholder didn't work for this one field! %>
       </div>
       <div class="col">
@@ -19,8 +21,6 @@
         <%= f.input :date, placeholder: "Date", label: false, as: :date, html5: true %>
       </div>
     </div>
-
-    <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %>
-    <%= f.button :submit, id: "new-event-sweet-alert-button", class: 'btn btn-primary', value: "Suggest event", style: "width: 100%" %>
+    <%= f.button :submit, id: "new-event-sweet-alert-button", class: 'btn btn-primary mt-3', value: "Suggest event", style: "width: 100%" %>
   <% end %></p>
 </div>
