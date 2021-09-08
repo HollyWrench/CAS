@@ -13,13 +13,16 @@
             </div>
             <div class="flip-card-back">
               <li class="feed-item-info">
+                <%# <div class="background"> %>
+                  <% if feed_item.description %>
+                    <p><%=feed_item.description%></p>
+                  <% end %>
+                  <% if feed_item.url %>
+                    <%= link_to "CLICK TO SEE ARTICLE", feed_item.url, target: "blank", class: "url-button" %>
+                  <% end %>
+
+                <%# </div> %>
                 <%#   IF STATEMENT GOES HERE %>
-                <% if feed_item.description %>
-                  <p><%=feed_item.description%></p>
-                <% end %>
-                <% if feed_item.url %>
-                  <%= link_to "CLICK TO SEE ARTICLE", feed_item.url, target: "blank", class: "url-button" %>
-                <% end %>
               </li>
             </div>
           </div>

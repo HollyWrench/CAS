@@ -59,10 +59,9 @@
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
+// .flip-card-front {
+//   color: black;
+// }
 
 .flip-card-back {
   background-color: black;
@@ -77,6 +76,7 @@
 .feed-item-info {
   list-style: none;
   position: relative;
+  margin: auto;
   a {
     position: absolute;
     top: 90px;
@@ -130,3 +130,7 @@
 // }
 
 // https://stackoverflow.com/questions/59927377/how-to-flip-image-on-click-in-javascript
+
+// .background {
+//   background-color: black;
+// }
