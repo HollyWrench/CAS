@@ -5,7 +5,6 @@
   grid-gap: 16px;
   list-style: none;
   img {
-    border: 1px solid $cas-lime-green;
     width: 100%;
     height: 260px;
     border-radius: 8px;
@@ -53,6 +52,11 @@
   .feed-item-photo {
     opacity: 0;
   }
+  // img {
+  //   border: 1px solid $cas-lime-green;
+  // }
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .flip-card-front, .flip-card-back {
@@ -95,6 +99,9 @@
   a:hover {
     box-shadow: 1px 2px $cas-lime-green;
   }
+  // display: inline-block;
+  // vertical-align: middle;
+  bottom: -15px;
 }
 
 .profile-feed-item-photo img {
