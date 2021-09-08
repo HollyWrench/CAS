@@ -4,7 +4,7 @@
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-  .rails-default-error-page {
+  .cas-error-page {
     background-color: black;
     color: white;
     text-align: center;
@@ -12,7 +12,7 @@
     margin: 0;
   }
 
-  .rails-default-error-page div.dialog {
+  .cas-error-page div.message {
     width: 95%;
     max-width: 33em;
     margin: 4em auto 0;
@@ -20,7 +20,7 @@
   /* red F4225E */
   /* green 33FF00 */
 
-  .rails-default-error-page div.dialog > div {
+  .cas-error-page div.message > div {
     border: 1px solid #33FF00;
     border-right-color: #33FF00;
     border-left-color: #33FF00;
@@ -33,13 +33,13 @@
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
 
-  .rails-default-error-page h1 {
+  .cas-error-page h1 {
     font-size: 100%;
     color: #F4225E;
     line-height: 1.5em;
   }
 
-  .rails-default-error-page div.dialog > p {
+  .cas-error-page div.message > p {
     margin: 0 0 1em;
     padding: 1em;
     background-color: #F4225E;
@@ -56,11 +56,11 @@
   </style>
 </head>
 
-<body class="rails-default-error-page">
+<body class="cas-error-page">
   <!-- This file lives in public/404.html -->
-  <div class="dialog">
+  <div class="message">
     <div>
-      <h1>The page you were looking for doesn't exist.</h1>
+      <h1>The page you were looking for doesn't exist, sorry!</h1>
       <p>You may have mistyped the address or the page may have moved.</p>
     </div>
     <p>If you are the application owner check the logs for more information.</p>
