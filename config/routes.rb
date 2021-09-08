@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/about', to: 'pages#about'
   get '/profile', to: 'pages#profile'
+  get '/join', to: 'pages#join'
+  post '/joins', to: 'joins#create'
   resources :events do
     resources :bookings, only: %i[new create index destroy]
   end
