@@ -1,7 +1,7 @@
 <div id="thing" class="new-event form-container mt-2 m-fadeOut">
   <%= simple_form_for :join, url: joins_path do |form| %>
-    <p><strong>NAME:</strong> <%="#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}" %></p>
-    <p><strong>EMAIL:</strong> <%="#{current_user.email}" %></p>
+    <p class="name"><strong>NAME:</strong> <%="#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}" %></p>
+    <p class="email"><strong>EMAIL:</strong> <%="#{current_user.email}" %></p>
     <div class="application-input">
       <%= form.input :year, prompt: "Select Your Academic Year", collection: ["Year 1", "Year 2", "Year 3", "Year 4", "Masters", "PhD"] %>
       <%= form.input :position, prompt: "Select A Position", collection: ["President", "Secretary", "Treasurer", "Social Secretary", "Publicity Officer", "Events Manager", "Social Media Manager", "Content Creator"] %>
