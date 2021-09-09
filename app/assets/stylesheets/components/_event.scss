@@ -339,3 +339,9 @@
 .mapboxgl-ctrl-attrib-inner {
   visibility: hidden;
 }
+
+.mapboxgl-marker {
+  g  {
+    fill: $cas-red !important;
+  }
+}
