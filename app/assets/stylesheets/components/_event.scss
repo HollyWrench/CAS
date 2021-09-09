@@ -31,33 +31,10 @@
   // margin-right: -2px;
 }
 
-.filter {
-  display: flex;
-  max-width: 1200px;
-  font-size: 16px;
-  color: white;
-  padding-left: 62px;
-  padding-top: 10px;
-  .filters_category {
-    // THE WORDS AND HIDDEN RADIO BUTTONS
-    display: flex;
-    position: absolute;
-    top: 258px;
-  }
-  .collection_radio_buttons:hover {
-    // THE WORDS
-    color: $cas-red;
-  }
-  .form-check-input {
-    // THE RADIO BUTTONS
-    transform: scale(0);
-    // HIDING THEM
-  }
-}
 
 .events-card {
   position: relative;
-  height: 600px;
+  height: 690px;
   border: solid 1px $cas-turquoise;
   border-radius: 8px;
   list-style: none;
@@ -71,27 +48,29 @@
     font-family: $headers-font;
     font-weight: bold;
     padding: 5px 0px;
+    margin-left: 0px;
   }
   .info {
     font-family: $headers-font;
     font-weight: normal;
     padding: 0px 0px;
+    margin-left: 0px;
   }
 
-    li {
+  li {
     display: block;
   }
 
   a {
     position: absolute;
     bottom: 20px;
-    padding: 4px;
+    padding: 10px 18px;
     left: 30%;
     border: solid 1px white;
     border-radius: 16px;
     color: white;
     background-color: black;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     // button to book event
   }
@@ -100,174 +79,172 @@
     border-color: $cas-red;
   }
 
-  img {
-    width: 100%;
-    height: 260px;
-    border-radius: 8px;
-  }
-
 }
 
 .new-event-card:hover {
   box-shadow: 1px 2px $cas-turquoise;
 
-.events-card {
-  a {
-    font-size: 20px;
-    padding: 8px;
+  .events-card {
+    a {
+      font-size: 20px;
+      padding: 8px;
+      color: white;
+      border-radius: 16px;
+      border-color: $cas-lime-green;
+      margin: 16px 0px;
+    }
+    .name, .info {
+      margin-left: 0px;
+    }
   }
-  .name, .info {
-    margin-left: 0px;
-  }
-}
 
-.other-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  .event-photo {
-    border: 1px solid $cas-pink;
-    // this is what is putting pink around the photo on each card!
+  .other-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    .event-photo {
+      border: 1px solid $cas-pink;
+      // this is what is putting pink around the photo on each card!
+    }
   }
-}
 
-.bookings-card {
-  position: relative;
-  border: solid 1px $cas-red;
-  border-radius: 8px;
-  list-style: none;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  color: black;
-  background-color: white;
-  padding: 30px;
-  width: 800px;
-  .name {
+  .bookings-card {
+    position: relative;
+    border: solid 1px $cas-red;
+    border-radius: 8px;
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
     color: black;
-    font-size: 25px;
-    font-family: $headers-font;
-    font-weight: bold;
-    padding: 5px 0px;
-  }
-  .info {
-    font-family: $headers-font;
-    font-weight: normal;
-    padding: 0px 0px;
-  }
+    background-color: white;
+    padding: 30px;
+    width: 800px;
+    .name {
+      color: black;
+      font-size: 25px;
+      font-family: $headers-font;
+      font-weight: bold;
+      padding: 5px 0px;
+    }
+    .info {
+      font-family: $headers-font;
+      font-weight: normal;
+      padding: 0px 0px;
+    }
 
     li {
-    display: block;
+      display: block;
+    }
+
+    a {
+      position: absolute;
+      bottom: 20px;
+      padding: 4px;
+      left: 30%;
+      margin-left: 10px;
+      border: solid 1px white;
+      border-radius: 16px;
+      color: white;
+      background-color: black;
+      font-size: 25px;
+      text-decoration: none;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 260px;
+      border-radius: 8px;
+      border: 1px solid $cas-lime-green;
+    }
+
+    #map {
+      border: 1px solid $cas-red;
+      border-radius: 16px;
+    }
   }
 
-  a {
-    position: absolute;
-    bottom: 20px;
-    padding: 4px;
-    left: 30%;
-    margin-left: 10px;
-    border: solid 1px white;
+  .new-event {
+    input {
+      border: 1px solid $cas-red;
+    }
+  }
+
+
+  .apply-now-button {
+    background-color: transparent;
+    margin: auto;
+    padding: 28px 42px;
+    border: solid 1px $cas-red;
     border-radius: 16px;
-    color: white;
-    background-color: black;
-    font-size: 25px;
+    color: $cas-turquoise;
+    background-color: transparent;
+    font-size: 35px;
+    font-weight: lighter;
     text-decoration: none;
+    text-align: center;
+    height: 400px;
   }
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 260px;
-    border-radius: 8px;
-    border: 1px solid $cas-lime-green;
-  }
-
-  #map {
-    border: 1px solid $cas-red;
+  .outside-button {
+    height: 460px;
+    background-color: transparent;
+    padding: 24px;
+    border: solid 1px $cas-turquoise;
     border-radius: 16px;
+    position: absolute;
+    right: 60px;
+    bottom: 80px;
   }
-}
 
-.new-event {
-  input {
+  .apply-now-button:hover {
+    box-shadow: 1px 2px $cas-red;
+  }
+
+  .outside-button:hover {
+    box-shadow: 1px 2px $cas-turquoise;
+  }
+
+  #booking_tickets_count {
+    width: 120px;
+    text-align: center;
+    border-color: $cas-lime-green;
+    margin: auto;
+  }
+
+  .book-now-button {
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    border-color: $cas-lime-green;
+    margin: 16px 0px;
+  }
+
+  .book-now-button:hover {
+    color: white;
+    box-shadow: 1px 2px $cas-lime-green;
+  }
+
+  .col-form-label {
+    visibility: hidden;
+  }
+
+  .upload-photo {
+    border: 1px solid #d3d3d3;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-weight: 500;
+    background: white;
+    border-radius: 2px;
+  }
+
+  .upload-photo {
+    height: 40px;
     border: 1px solid $cas-red;
+    width: 220px;
+    padding: 8px;
+    padding-left: 16px;
+    color: rgb(105, 103, 103);
   }
-}
-
-
-.apply-now-button {
-  background-color: transparent;
-  margin: auto;
-  padding: 28px 42px;
-  border: solid 1px $cas-red;
-  border-radius: 16px;
-  color: $cas-turquoise;
-  background-color: transparent;
-  font-size: 35px;
-  font-weight: lighter;
-  text-decoration: none;
-  text-align: center;
-  height: 400px;
-}
-.outside-button {
-  height: 460px;
-  background-color: transparent;
-  padding: 24px;
-  border: solid 1px $cas-turquoise;
-  border-radius: 16px;
-  position: absolute;
-  right: 60px;
-  bottom: 80px;
-}
-
-.apply-now-button:hover {
-  box-shadow: 1px 2px $cas-red;
-}
-
-.outside-button:hover {
-  box-shadow: 1px 2px $cas-turquoise;
-}
-
-#booking_tickets_count {
-  width: 120px;
-  text-align: center;
-  border-color: $cas-lime-green;
-  margin: auto;
-}
-
-.book-now-button {
-  background-color: black;
-  color: white;
-  border-radius: 16px;
-  border-color: $cas-lime-green;
-  margin: 16px 0px;
-}
-
-.book-now-button:hover {
-  color: white;
-  box-shadow: 1px 2px $cas-lime-green;
-}
-
-.col-form-label {
-  visibility: hidden;
-}
-
-.upload-photo {
-  border: 1px solid #d3d3d3;
-  padding: 16px 24px;
-  cursor: pointer;
-  font-weight: 500;
-  background: white;
-  border-radius: 2px;
-}
-
-.upload-photo {
-  height: 40px;
-  border: 1px solid $cas-red;
-  width: 220px;
-  padding: 8px;
-  padding-left: 16px;
-  color: rgb(105, 103, 103);
-}
 }
 
 
@@ -310,6 +287,27 @@
 }
 
 .filter {
+  display: flex;
+  max-width: 1200px;
+  font-size: 16px;
+  color: white;
+  padding-left: 62px;
+  padding-top: 10px;
+  .filters_category {
+    // THE WORDS AND HIDDEN RADIO BUTTONS
+    display: flex;
+    position: absolute;
+    top: 258px;
+  }
+  .collection_radio_buttons:hover {
+    // THE WORDS
+    color: $cas-red;
+  }
+  .form-check-input {
+    // THE RADIO BUTTONS
+    transform: scale(0);
+    // HIDING THEM
+  }
   .col-form-label {
     visibility: hidden;
   }

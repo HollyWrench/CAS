@@ -28,6 +28,9 @@
         <li class="info">
           <p><strong>DATE: </strong><%=event.date.strftime("%b %d, %Y")%></p>
         </li>
+        <li class="info">
+          <p><strong>PRICE: </strong>£<%=event.price%>0</p>
+        </li>
         <%=link_to "MORE INFO", new_event_booking_path(event)%>
       </div>
     <% end %>
