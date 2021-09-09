@@ -4,7 +4,8 @@
     <p><strong>FILTER:</strong></p>
     <p><%= simple_form_for :filters, url: events_path, method: :get do |f| %>
       <%= f.input :category, label: false, as: :radio_buttons, collection: [['social', 'SOCIALS'], ['seminar', 'SEMINARS'], ['other', 'OTHER']], label_method: :second, value_method: :first, input_html: { onchange: 'this.form.submit();' } %>
-    <% end %></p>
+      <% end %>
+    </p>
   </div>
 
   <div class="other-container" style="padding-top: 20px;">
