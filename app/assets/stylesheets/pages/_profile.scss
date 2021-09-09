@@ -68,11 +68,13 @@ ul {
     font-family: $headers-font;
     font-weight: bold;
     padding: 5px 0px;
+    margin-left: 0px;
   }
   .info {
     font-family: $headers-font;
     font-weight: normal;
     padding: 0px 0px;
+    margin-left: 0px;
   }
 
   .tickets {
@@ -85,12 +87,17 @@ ul {
 
   li {
     display: block;
+    margin-left: 0px;
   }
 
   padding-bottom: 0px;
+
+  .tickets {
+    text-align: left;
+    margin-left: 0px;
+  }
 }
 
 .profile-saved-resize {
   width: 100%;
-
 }
