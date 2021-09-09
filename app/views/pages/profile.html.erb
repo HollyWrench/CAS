@@ -29,30 +29,31 @@
         <% end %>
       </div>
     </div>
-
-    <div class="item1">
-      <h2 class="home-column-title">MY SAVED CONTENT:</h2>
-      <% @feed_items.each do |f| %>
-        <%# <div class="feed-items-card"> %>
-          <% if current_user.favorited?(f) %>
-            <% if f.url %>
-              <%= link_to cl_image_tag(f.photo.key), f.url, class: "profile-feed-item-photo", href: f.url, target: "blank"%>
-            <% end %>
-            <% if f.description %>
-              <div class="profile-flip">
-                <div class="">
-                  <li class="feed-item-info">
-                  <%= cl_image_tag f.photo.key, crop: :fill, class: "profile-feed-item-photo saved-img"%>
-                    <p><%=f.description%></p>
-                  </li>
+    <div class="division-line-div">
+      <div class="item1">
+        <h2 class="home-column-title">MY SAVED CONTENT:</h2>
+        <% @feed_items.each do |f| %>
+          <%# <div class="feed-items-card"> %>
+            <% if current_user.favorited?(f) %>
+              <% if f.url %>
+                <%= link_to cl_image_tag(f.photo.key), f.url, class: "profile-feed-item-photo", href: f.url, target: "blank"%>
+              <% end %>
+              <% if f.description %>
+                <div class="profile-flip">
+                  <div class="">
+                    <li class="feed-item-info">
+                    <%= cl_image_tag f.photo.key, crop: :fill, class: "profile-feed-item-photo saved-img"%>
+                      <p><%=f.description%></p>
+                    </li>
+                  </div>
+                  <div class="">
+                  </div>
                 </div>
-                <div class="">
-                </div>
-              </div>
+              <% end %>
             <% end %>
-          <% end %>
-        <%# </div> %>
-      <% end %>
+          <%# </div> %>
+        <% end %>
+      </div>
     </div>
 
 

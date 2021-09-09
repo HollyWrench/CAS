@@ -2,7 +2,7 @@
   // flex-grow: 1;
   padding: 30px;
   height: 100%;
-  border-style: solid;
+  // border-style: solid;
   color: white;
   border-color: #2AFF19;
   border-width: thin;
@@ -13,6 +13,13 @@
 
 .item1 {
   width: 580px;
+  border-color: #2AFF19;
+
+}
+
+.division-line-div {
+  height: 100vh;
+  border-left: 1px solid #2AFF19;
 }
 
 .item2 {
