@@ -39,12 +39,16 @@ document.addEventListener('turbolinks:load', () => {
   priceCalc();
   let carousel = document.querySelector(".carousel")
   if (carousel) {
-    carousel();
+    $('.carousel').carousel()
   }
   initMapbox();
   flip();
   previewImageOnFileSelect();
-  fadeIn();
+  var tog = document.getElementById("tog");
+  if (tog) {
+
+    fadeIn();
+  }
 });
 
 import "controllers"
