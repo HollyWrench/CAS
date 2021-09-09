@@ -13,6 +13,9 @@
         <li class="info">
           <p><strong>LOCATION: </strong><%=@event.location%></p>
         </li>
+        <li class="info">
+          <p><strong>DATE: </strong><%=@event.date.strftime("%b %d, %Y") %></p>
+        </li>
         <br>
         <%= simple_form_for([@event, @booking]) do |f| %>
           <%# <%= f.input :name %>

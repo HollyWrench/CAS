@@ -17,8 +17,11 @@
             <li class="info">
               <p><strong>LOCATION: </strong><%=booking.event.location%></p>
             </li>
+            <li class="info">
+              <p><strong>DATE: </strong><%=booking.event.date.strftime("%b %d, %Y")%></p>
+            </li>
             <li class="tickets">
-              <p>Tickets: <%= booking.tickets_count %></p>
+              <p><strong>TICKETS: </strong><%= booking.tickets_count %></p>
             </li>
             <%# <%= link_to 'Edit', edit_booking_path(booking)  %>
             <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
