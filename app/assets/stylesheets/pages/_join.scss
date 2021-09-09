@@ -36,8 +36,9 @@
 
 .inverse-phrase-card {
   background: transparent;
-  border: 1px solid $cas-red;
+  // border: 1px solid $cas-red;
   color: white;
+  padding-top: 30px;
 }
 
 .phrase-card, .app-phrase-card, .inverse-phrase-card  {
