@@ -18,7 +18,7 @@
   }
 }
 
-.app-phrase-card, .inverse-phrase-card {
+.app-phrase-card {
   margin-left: 60px;
   margin-right: 60px;
   width: 900px;
@@ -34,12 +34,12 @@
   border: 1px solid $cas-red;
 }
 
-.inverse-phrase-card {
-  background: transparent;
-  // border: 1px solid $cas-red;
-  color: white;
-  padding-top: 30px;
-}
+// .inverse-phrase-card {
+//   background: transparent;
+//   // border: 1px solid $cas-red;
+//   color: white;
+//   padding-top: 30px;
+// }
 
 .phrase-card, .app-phrase-card, .inverse-phrase-card  {
   padding-left: 30px;
@@ -72,6 +72,25 @@
     padding-left: 0px;
     font-size: 20px;
   }
+}
+.application-committee-info, .application-headings {
+  h2 {
+    color: $cas-red;
+  }
+}
+
+.application-headings {
+  h3 {
+    color: $cas-turquoise;
+  }
+}
+
+.btn-primary {
+  border-radius: 12px;
+}
+
+.btn-primary:hover {
+  box-shadow: 1px 2px $cas-red;
 }
 
 .application-card {
@@ -117,7 +136,7 @@
   margin: auto;
   padding: 28px 42px;
   border: solid 1px $cas-red;
-  border-radius: 16px;
+  border-radius: 24px;
   color: $cas-turquoise;
   background-color: transparent;
   font-size: 35px;
@@ -135,6 +154,7 @@
   position: absolute;
   right: 60px;
   bottom: 80px;
+  top: 95px;
 }
 
 .apply-now-button:hover {
@@ -151,6 +171,7 @@
 
 #thing {
   color: white;
+  padding-left: 0px;
 }
 
 .name {

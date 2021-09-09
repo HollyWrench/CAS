@@ -169,18 +169,23 @@
 
 
 .new-event-card {
-  height: 600px;
+  height: 340px;
+  width: 300px;
   border: 1px solid $cas-turquoise;
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 24px;
   margin-bottom: 16px;
   padding: 30px;
+  padding-right: 20px;
   margin-top: auto;
+  margin-bottom: 200px;
+  margin-left: 50px;
+  padding-left: 10px;
   .inside-new-event-card {
     left: 4%;
     top: 4%;
     margin: auto;
-    padding: 210px 4px;
+    padding: 60px 4px;
     padding-left: 40px;
     margin-left: 10px;
     margin-right: 25px;
@@ -195,9 +200,15 @@
 }
 
 .inside-new-event-card {
+  padding-right: 20px;
+  position: relative;
+  height: 260px;
   a {
+    position: absolute;
     text-decoration: none;
-    padding-left: 0px;
+    font-size: 26px;
+    right: -5px;
+    top: 87px;
   }
 }
 
