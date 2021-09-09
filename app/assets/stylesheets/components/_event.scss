@@ -78,6 +78,12 @@
     box-shadow: 1px 2px $cas-red;
     border-color: $cas-red;
   }
+  li {
+    list-style-type: circle;
+    padding: 10px;
+    margin-left: 20px;
+    // color: black ;
+  }
 
 }
 
@@ -338,4 +344,10 @@
 
 .mapboxgl-ctrl-attrib-inner {
   visibility: hidden;
+}
+
+.mapboxgl-marker {
+  g  {
+    fill: $cas-red !important;
+  }
 }
