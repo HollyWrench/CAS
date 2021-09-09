@@ -87,14 +87,14 @@ feed_item2 = FeedItem.new(url: "https://www.vanappleart.com/biography")
 feed_item2.photo.attach(io: file11, filename: 'Diederik Van Apple.png', content_type: 'image/png')
 feed_item2.save!
 
-file12 = URI.open("https://res.cloudinary.com/ds2g4bsxw/image/upload/v1631183003/vdv5h078jwmhdhcr26xmn31cpnax.png")
+file12 = URI.open("https://res.cloudinary.com/ds2g4bsxw/image/upload/v1631178421/ual0l9olj54012u6xr0ofplbvbeg.png")
 feed_item3 = FeedItem.new(description: "‘Ice Watch’, Olafur Eliasson, 2014.
 
 Olafur Eliasson installed this piece at the Tate Modern in London in 2014. It consisted of 30 melting blocks of ice,reminders of the dangers of global warming.
 
 The estimated energy cost for bringing one of these blocks to London was equal to one person flying from London to the Arctic and back to witness the ice melting.")
 
-feed_item3.photo.attach(io: file12, filename: 'vdv5h078jwmhdhcr26xmn31cpnax.png', content_type: 'image/png')
+feed_item3.photo.attach(io: file12, filename: 'ual0l9olj54012u6xr0ofplbvbeg.png', content_type: 'image/png')
 feed_item3.save!
 
 file13 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491528/Titus%20Youtube.png')
