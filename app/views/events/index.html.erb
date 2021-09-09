@@ -1,16 +1,10 @@
 <div class="main-container">
   <h2>UPCOMING EVENTS</h2>
   <div class="filter">
-
     <p><strong>FILTER:</strong></p>
-
     <p><%= simple_form_for :filters, url: events_path, method: :get do |f| %>
       <%= f.input :category, label: false, as: :radio_buttons, collection: [['social', 'SOCIALS'], ['seminar', 'SEMINARS'], ['other', 'OTHER']], label_method: :second, value_method: :first, input_html: { onchange: 'this.form.submit();' } %>
     <% end %></p>
-
-
-
-
   </div>
 
   <div class="other-container" style="padding-top: 20px;">
@@ -21,7 +15,6 @@
           <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill, class: "event-photo" %>
           <%# BREAKS IF THIS ISN'T WRAPPED IN IF STATEMEMENT CHECKING FOR ATTACHED PHOTO !!!!!! %>
         <% end %>
-
         <li class="name">
           <p><%=event.name%></p>
         </li>
