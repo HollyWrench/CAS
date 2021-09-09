@@ -19,7 +19,7 @@
         <%= f.input :date, placeholder: "Date", label: false, as: :date, html5: true %>
       </div>
       <div class="col">
-        <%= f.input :photo, input_html: { class: 'd-none', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+        <%= f.input :photo, input_html: { class: 'd-none upload-photo', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
         <%= image_tag "", width: 300, class: "hidden", id: "photo-preview" %>
       </div>
     </div>
