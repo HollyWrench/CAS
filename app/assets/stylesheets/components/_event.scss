@@ -110,6 +110,15 @@
 
 .new-event-card:hover {
   box-shadow: 1px 2px $cas-turquoise;
+
+.events-card {
+  a {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .name, .info {
+    margin-left: 0px;
+  }
 }
 
 .other-container {
@@ -217,6 +226,12 @@
   color: white;
   border-radius: 16px;
   border-color: $cas-lime-green;
+  margin: 16px 0px;
+}
+
+.book-now-button:hover {
+  color: white;
+  box-shadow: 1px 2px $cas-lime-green;
 }
 
 .col-form-label {
@@ -231,7 +246,6 @@
   background: white;
   border-radius: 2px;
 }
-
 
 .upload-photo {
   height: 40px;
