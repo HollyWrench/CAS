@@ -108,16 +108,6 @@
 
 }
 
-// h3 {
-//   color: white;
-// }
-
-// h2 {
-//   font-size: 50px;
-//   padding-bottom: 60px;
-//   padding-left: 0px;
-// }
-
 .events-card {
   a {
     font-size: 20px;
@@ -233,6 +223,12 @@
   color: white;
   border-radius: 16px;
   border-color: $cas-lime-green;
+  margin: 16px 0px;
+}
+
+.book-now-button:hover {
+  color: white;
+  box-shadow: 1px 2px $cas-lime-green;
 }
 
 .col-form-label {
@@ -248,10 +244,6 @@
   border-radius: 2px;
 }
 
-// #photo-preview {
-//   height: 130px;
-//   width: 130px;
-// }
 .upload-photo {
   height: 40px;
   border: 1px solid $cas-red;
