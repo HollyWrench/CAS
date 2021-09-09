@@ -55,7 +55,7 @@
   }
 }
 
-.events-card, .new-event-card {
+.events-card {
   position: relative;
   height: 600px;
   border: solid 1px $cas-turquoise;
@@ -193,25 +193,38 @@
   }
 }
 
-.new-event-card {
+
+.apply-now-button {
   background-color: transparent;
-  a {
-    left: 4%;
-    top: 4%;
-    margin: auto;
-    padding: 4px;
-    margin-left: 10px;
-    margin-right: 25px;
-    border: solid 1px $cas-red;
-    border-radius: 16px;
-    color: $cas-turquoise;
-    background-color: transparent;
-    font-size: 35px;
-    font-weight: lighter;
-    text-decoration: none;
-    text-align: center;
-  }
-  margin-top: auto;
+  margin: auto;
+  padding: 28px 42px;
+  border: solid 1px $cas-red;
+  border-radius: 16px;
+  color: $cas-turquoise;
+  background-color: transparent;
+  font-size: 35px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: center;
+  height: 400px;
+}
+.outside-button {
+  height: 460px;
+  background-color: transparent;
+  padding: 24px;
+  border: solid 1px $cas-turquoise;
+  border-radius: 16px;
+  position: absolute;
+  right: 60px;
+  bottom: 80px;
+}
+
+.apply-now-button:hover {
+  box-shadow: 1px 2px $cas-red;
+}
+
+.outside-button:hover {
+  box-shadow: 1px 2px $cas-turquoise;
 }
 
 #booking_tickets_count {
@@ -256,3 +269,42 @@
   color: rgb(105, 103, 103);
 }
 }
+
+
+.new-event-card {
+  height: 600px;
+  border: 1px solid $cas-turquoise;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 30px;
+  margin-top: auto;
+  .inside-new-event-card {
+    left: 4%;
+    top: 4%;
+    margin: auto;
+    padding: 210px 4px;
+    padding-left: 40px;
+    margin-left: 10px;
+    margin-right: 25px;
+    border: solid 1px $cas-red;
+    border-radius: 16px;
+    color: $cas-turquoise;
+    background-color: transparent;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+.inside-new-event-card {
+  a {
+    text-decoration: none;
+    padding-left: 0px;
+  }
+}
+
+.inside-new-event-card:hover {
+  box-shadow: 1px 2px $cas-red;
+}
+
