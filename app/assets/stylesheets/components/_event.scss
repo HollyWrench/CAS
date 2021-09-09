@@ -108,6 +108,16 @@
 
 }
 
+.events-card {
+  a {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .name, .info {
+    margin-left: 0px;
+  }
+}
+
 .other-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
