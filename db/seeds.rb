@@ -72,7 +72,7 @@ eigth_event.save!
 file9 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491527/Yurie%20Nagashima.png')
 yurie_description = "Self portrait, Yurie Nagashima.
 
-The self-portrait means that you can take on both roles, as a model and as a photographer. It is symbolic. It is this very idea, the production of a truth about a sitter that is not dictated by anyone other than the sitter her or himself, that should be seen as the driving force behind self-portraiture."
+The self-portrait means that you can take on both roles, as a model and as a photographer. It is symbolic. 'It is this very idea - the production of a truth about a sitter that is not dictated by anyone other than the sitter her or himself.'"
 feed_item = FeedItem.new(description: yurie_description)
 feed_item.photo.attach(io: file9, filename: 'Yurie Nagashima.png', content_type: 'image/png')
 feed_item.save!
@@ -87,14 +87,14 @@ feed_item2 = FeedItem.new(url: "https://www.vanappleart.com/biography")
 feed_item2.photo.attach(io: file11, filename: 'Diederik Van Apple.png', content_type: 'image/png')
 feed_item2.save!
 
-file12 = URI.open("https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491557/Olafur%20E.png")
+file12 = URI.open("https://res.cloudinary.com/ds2g4bsxw/image/upload/v1631178421/ual0l9olj54012u6xr0ofplbvbeg.png")
 feed_item3 = FeedItem.new(description: "‘Ice Watch’, Olafur Eliasson, 2014.
 
-Scandinavian artist Olafur Eliasson installed this piece outside the Tate Modern in London in 2014. The installation consisted of 30 melting blocks of ice acting as a reminder of the dangers of the warming of the planet.
+Olafur Eliasson installed this piece at the Tate Modern in London in 2014. It consisted of 30 melting blocks of ice,reminders of the dangers of global warming.
 
 The estimated energy cost for bringing one of these blocks to London was equal to one person flying from London to the Arctic and back to witness the ice melting.")
 
-feed_item3.photo.attach(io: file12, filename: 'Yurie Nagashima.png', content_type: 'image/png')
+feed_item3.photo.attach(io: file12, filename: 'ual0l9olj54012u6xr0ofplbvbeg.png', content_type: 'image/png')
 feed_item3.save!
 
 file13 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491528/Titus%20Youtube.png')
@@ -102,9 +102,9 @@ feed_item4 = FeedItem.new(url: "https://www.youtube.com/watch?v=DDaldVHUedI")
 feed_item4.photo.attach(io: file13, filename: 'Titus Youtube.png', content_type: 'image/png')
 
 file13 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491535/Kip%20Omolade.png')
-feed_item4 = FeedItem.new(description: "DioKipvadiova series, Kip Omolade, hyper-realistic oil painting.
+feed_item4 = FeedItem.new(description: "DioKipvadiova series, Kip Omolade.
 
-Omolade’s use of masks in his art is inspired by his studies of the bronze and gold masks from the ancient Kingdom of Ife in West Africa. These were so impressive that when they were first discovered by Germans at the turn of the 20th century, it wasn’t believed that they could have been made by Africans. Instead they were used as evidence for the existence of the lost city of Atlantis.")
+Omolade’s use of masks in his art is inspired by bronze and gold masks from the ancient Kingdom of Ife in West Africa. These were so impressive that when they were first discovered at the turn of the 20th century, it wasn’t believed that they could have been made by Africans. Instead they were used as evidence for the existence of the lost city of Atlantis.")
 feed_item4.photo.attach(io: file13, filename: 'Kip Omolade.png', content_type: 'image/png')
 feed_item4.save!
 
@@ -121,9 +121,9 @@ feed_item6.save!
 file16 = URI.open('https://res.cloudinary.com/ds2g4bsxw/image/upload/v1630491551/Luap_xv1oew.png')
 feed_item7 = FeedItem.new(description: "‘Pull Yourselves Together’ 2021.
 
-LUAP's iconic pink bear was born from one of the artist’s childhood memories of a pink Care Bare, and became a symbol of self-improvement and an alter ego through which to grow and heal.
+LUAP's iconic pink bear is a symbol of self-improvement and an alter ego through which to grow and heal.
 
-With the pink bear, Robinson has visited every continent bar Antarctica, and largely tackled his depression and social anxiety. His mental health journey is reflected in his images of the pink bearas it becomes more confident and social. ")
+With the pink bear, Robinson has visited every continent bar Antarctica, and largely tackled his depression and social anxiety. His mental health journey is reflected in his images of the pink bear as it becomes more confident and social. ")
 feed_item7.photo.attach(io: file16, filename: 'Luap_xv1oew.png', content_type: 'image/png')
 feed_item7.save!
 
