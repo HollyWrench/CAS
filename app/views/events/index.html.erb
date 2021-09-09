@@ -10,7 +10,7 @@
 
   <div class="other-container" style="padding-top: 20px;">
 
-    <% @events.each do |event| %>
+    <% @events.reverse.each do |event| %>
       <div class="events-card" data-aos="zoom-out-up" data-aos-duration=90>
         <% if event.photo.attached? %>
           <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill, class: "event-photo" %>
